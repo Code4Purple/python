@@ -1,2 +1,2 @@
-# javascript
-Where everything JavaScript lives for me
+# Python
+Where everything Python lives for me
