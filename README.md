@@ -1,2 +1,5 @@
 # Python
-Where everything Python lives for me
+
+## Python Master Class System and Software Requirements
+1. python version 
+2. 
