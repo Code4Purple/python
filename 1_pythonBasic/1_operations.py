@@ -1,4 +1,6 @@
 # File: 1_operations.py
+# Topics: Arithmetic Operations, Modulus Operators, String & Using Escape Sequence, Concatenation of Strings
+# Python Version: 3.12.1
 
 # Arithmetic Operations
 
