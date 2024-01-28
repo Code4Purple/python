@@ -8,7 +8,7 @@ print("\n----- BMI Calculator Program (World Wide)-----\n")
 weight = float(input("Enter your weight in kgs    : "))
 height = float(input("Enter your height in meters : "))
 
-bmi = weight / height ** 2
+bmi = weight / height ** 2 # ** is the exponent operator
 
 print("Your BMI is :", bmi)
 
