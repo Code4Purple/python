@@ -224,7 +224,92 @@ print("The List : ", numbers)
 print("The List * 2 : ", numbers * 2)
 print("") # Blank Line for console readability
 
+# Nested Lists
+print("\n----- Nested Lists -----\n")
+# Create a nested list
+print("The List : ", numbers)
+nested_list = [numbers, even_numbers]
+print("The Nested List : ", nested_list)
+print("") # Blank Line for console readability
+
+# Tuples
+print("\n----- Tuples -----\n") 
+# Tuples are immutable lists
+# Tuples are defined by using parentheses ()
+# Tuples can contain any data type.
+
+# Creating a tuple
+print("\n----- Creating a tuple -----\n")
+# Create a tuple of names
+names_tuple = ("John", "Jane", "Jack", "Jill")
+print(names_tuple)
+print("") # Blank Line for console readability
+
+# Accessing elements in a tuple
+print("\n----- Accessing elements in a tuple -----\n")
+# Access the first element in the tuple
+print(names_tuple[0])
+print("") # Blank Line for console readability
+
+# Creating Empty Lists
+print("\n----- Creating Empty Lists -----\n")
+# Create an empty list
+empty_list = []
+print(empty_list)
+print("") # Blank Line for console readability
+
+# Searching Lists
+print("\n----- Searching Lists -----\n")
+# Search a list
+print("The List : ", numbers)
+print("The index of 5 in the list : ", numbers.index(5))
+
+# Dictionaries
+print("\n----- Dictionaries -----\n")
+# Dictionaries are a collection of key-value pairs.
+# Dictionaries are mutable, meaning they can be changed.
+# Dictionaries are defined by using curly braces {}.
+# Dictionaries can contain any data type.
+
+# Creating a dictionary
+print("\n----- Creating a dictionary -----\n")
+# Create a dictionary of names
+names_dict = {"John": 1, "Jane": 2, "Jack": 3, "Jill": 4}
+print(names_dict)
+print("") # Blank Line for console readability
+
+# Accessing elements in a dictionary
+print("\n----- Accessing elements in a dictionary -----\n")
+# Access the first element in the dictionary
+print(names_dict["John"])
+print("") # Blank Line for console readability
+
+# Modifying elements in a dictionary
+print("\n----- Modifying elements in a dictionary -----\n")
+# Change the first element in the dictionary
+names_dict["John"] = 5
+print(names_dict)
+print("") # Blank Line for console readability
+
+# Adding elements to a dictionary
+print("\n----- Adding elements to a dictionary -----\n")
+# Add an element to the dictionary
+names_dict["James"] = 6
+print(names_dict)
+print("") # Blank Line for console readability
+
+# Set list of keys
+print("\n----- Set list of keys -----\n")
+# Set a list of keys    
+print(names_dict.keys())
+print("") # Blank Line for console readability
+
+# Set list of values
+print("\n----- Set list of values -----\n")
+# Set a list of values
+print(names_dict.values())
+print("") # Blank Line for console readability
 
 
 
-print() # Blank Line for console readability
+#print() # Blank Line for console readability
