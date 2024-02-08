@@ -1,0 +1,19 @@
+What is reinforcement Learning?
+
+The Agent (the ai) performs actions within the environment and based on it actions within the environment 
+we can set a State of Reward(Good Job Reward or Bad Job Reward) for it to learn. 
+
+The Bellman Equation
+
+Concepts:
+    S - State
+    A - Action
+    R - Reward
+    Y - Discount
+
+ Equation :  V(s) =  max(R(s,a)+yV(s'))
+
+ Markov Decision Process (MDP)
+    Deterministic Search 
+    Non-Deterministic Search
+
