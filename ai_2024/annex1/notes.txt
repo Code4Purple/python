@@ -1,0 +1,35 @@
+
+Why didn't nerual netoworks never caught on in the 1994?
+    Processing power and data was not up to speed to to train models of nerual netoworks.
+    Ai was ahead of the processing access back in the 1994.
+
+
+
+Comparsion of storage: 
+
+1956
+    The massive hardware to store maybe 5mb if you are lucky.
+
+1980 
+    Store was a size of a whole pc now, and only got to at that point 10mb
+
+Now 
+    The Store is so small and fast the smallest value size carded is a 256GB over the 10mb before hand
+
+Moores Law is why the storage and computers are becoming cheeper over time . This includes processing power as well.
+
+What is Deep Learning ?
+
+Geoffrey Hinton :
+    * Grandfather of Deep Learning *
+    Deep Learning is the idea is for computers to become on of the best tools for learning which is our brain.
+    
+    The idea behind the ai :
+        Build a artical zone full of nodes and 3 main node layers are input and ouput layers are easy to understand.
+        But the hidden layer the infinite processing that the tasks are understood and processed for an output.
+
+
+The Neuron
+    Basic building of artical nerual netoworks.
+    
+    
