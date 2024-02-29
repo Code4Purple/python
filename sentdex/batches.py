@@ -14,8 +14,18 @@ biases = [2, 3, 0.5]
 inputs = np.array(inputs)  # Convert inputs to a NumPy array
 weights = np.array(weights)  # Convert weights to a NumPy array
 
-output = np.dot(inputs, weights.T) + biases  # Transpose weights before the dot product
-print(output)
+# layer 1 
+layer1Outputs = np.dot(inputs, weights.T) + biases  # Transpose weights before the dot product
 
+# layer 2
+weights2 = [[0.1, -0.14, 0.5],
+            [-0.5, 0.12, -0.33],
+            [-0.44, 0.73, -0.13]]
 
-# Bookmark : https://youtu.be/TEWy9vZcxW4?list=TLPQMjUwMjIwMjRlXsfvMFAA4g
+biases2 = [-1 , 2 , -0.5]
+
+weight2 = np.array(weights2).T  # Convert weights2 to a NumPy array
+
+layer2Outputs = np.dot(layer1Outputs, weights2) + biases2 
+
+print(layer2Outputs)
