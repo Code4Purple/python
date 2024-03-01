@@ -55,3 +55,6 @@ activation2.forward(densel2.output)
 loss_function = LossCategoricalCrossentropy()
 loss = loss_function.calculate(activation2.output, y)
 print('Loss:', loss)
+
+
+##nnfs.io
