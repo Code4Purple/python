@@ -58,4 +58,36 @@ SAVE ALL then run python manage.py runsesrver to test it.
 
 Basic Website example setup -- DONE
 
----------------------------------------------------------------------------------------------------------------s
+----------------------------------------------------------------------------------------------------------------
+ 
+We can eaither build our own website from scratch here --->
+
+Or
+
+We can get a webiste template and edit it to our needs --->
+
+    if you are using templates the templates could have static files and a way to make sure your website can use it we need to add it the function of /dento/settings.py
+
+    IN settings.py
+        add this to the top: 
+            import os
+        
+        
+        add this to the bottom :
+            STATIC_URL = 'static/'
+
+            STATICFILES_DIRS = [
+                os.path.join(BASE_DIR, 'static')
+            ]
+
+On top level of the folders we need to make a folder name : static
+then make a folder for the website static files under : website
+
+
+then u can copy all the static files into the static/website folder
+
+then at the top of the templetes html file we need to add {% load static %} 
+then you need to edit all the static tag towards all the imgs , icons, and anything like with this : 
+{% static 'website/' % }
+
+this example we put all the static files to the top level folder of website then all you need to after the / is what file is called example : {% static 'website/image_file' %}
