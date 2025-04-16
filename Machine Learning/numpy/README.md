@@ -1,2 +1,3 @@
-Bookmark: https://www.youtube.com/watch?v=gnKbAAVUzro&list=PLCC34OHNcOtpalASMlX2HHdsLNipyyhbK
+Bookmark:   https://youtu.be/PbKOrSottRQ?list=PLCC34OHNcOtpalASMlX2HHdsLNipyyhbK&t=261
 
+install pip numpy
