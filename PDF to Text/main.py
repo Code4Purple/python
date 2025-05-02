@@ -2,7 +2,7 @@ import PyPDF2
 
 def extract_text_from_pdf(pdf_file: str) -> [str]:
 	with open(pdf_file, 'rb') as pdf:
-		reader = PyPDF2.pdfFileReader(pdf, strict=False)
+		reader = PyPDF2.PdReader(pdf)
 		pdf_text = []
 
 		for page in reader.pages:
@@ -11,7 +11,12 @@ def extract_text_from_pdf(pdf_file: str) -> [str]:
 
 		return pdf_text
 
-if __name__ == '__main__':
-	extracted_text = extract_text_from_pdf('Simple-1Pager.pdf')
+def main():
+	extracted_text = extract_text_from_pdf('dummy.pdf')
 	for text in extracted_text:
+		# split_message = re.split(r'\s+|[,;?!.-]\s*', text.lower()0)
 		print(text)
+
+if __name__ == '__main__':
+	main()
+
