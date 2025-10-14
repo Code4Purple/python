@@ -1,0 +1,89 @@
+## Forward Propagation: Step by Step                                                                                
+                                                                                                                    
+Forward propagation is the process of passing input data through the network layer by layer to produce an 
+output prediction.                                                                                                  
+                                                                                                                    
+## The Mathematical Process                                                                                         
+                                                                                                                    
+### For a Single Neuron:                                                                                            
+```                                                                                                                 
+Output = Activation( Σ(Weight × Input) + Bias )                                                                     
+```                                                                                                                 
+                                                                                                                    
+Or in mathematical notation:                                                                                        
+```                                                                                                                 
+z = w₁x₁ + w₂x₂ + ... + wₙxₙ + b                                                                                    
+a = σ(z)                                                                                                            
+```                                                                                                                 
+                                                                                                                    
+Where:                                                                                                              
+- `z` = weighted sum (linear combination)                                                                           
+- `w` = weights                                                                                                     
+- `x` = inputs                                                                                                      
+- `b` = bias                                                                                                        
+- `σ` = activation function                                                                                         
+- `a` = activated output                                                                                            
+                                                                                                                    
+## Layer-by-Layer Process                                                                                           
+                                                                                                                    
+### 1. Input Layer → First Hidden Layer                                                                             
+```                                                                                                                 
+For each neuron in hidden layer 1:                                                                                  
+z₁ = w₁₁×x₁ + w₁₂×x₂ + ... + w₁ₙ×xₙ + b₁
+a₁ = σ(z₁)
+```
+
+### 2. Hidden Layer 1 → Hidden Layer 2
+```
+For each neuron in hidden layer 2:
+z₂ = w₂₁×a₁₁ + w₂₂×a₁₂ + ... + w₂ₘ×a₁ₘ + b₂
+a₂ = σ(z₂)
+```
+
+### 3. Continue until Output Layer
+The final layer produces your prediction.
+
+## Simple Example
+
+Let's say we have:
+- 2 inputs: x₁ = 3, x₂ = 2
+- 1 hidden layer with 2 neurons
+- Weights: w₁₁ = 0.5, w₁₂ = 0.8, w₂₁ = 0.3, w₂₂ = 0.7
+- Biases: b₁ = 0.1, b₂ = 0.2
+- Activation function: ReLU (max(0, x))
+
+**Step 1: Hidden Layer Calculations**
+```
+Neuron 1: z₁ = (0.5 × 3) + (0.8 × 2) + 0.1 = 1.5 + 1.6 + 0.1 = 3.2
+          a₁ = ReLU(3.2) = 3.2
+
+Neuron 2: z₂ = (0.3 × 3) + (0.7 × 2) + 0.2 = 0.9 + 1.4 + 0.2 = 2.5
+          a₂ = ReLU(2.5) = 2.5
+```
+
+**Step 2: Output Layer** (assuming 1 output neuron)
+```
+Output: z_out = (w_out1 × 3.2) + (w_out2 × 2.5) + b_out
+        a_out = σ(z_out)
+```
+
+## In Matrix Form (What the Book Likely Shows)
+
+Instead of loops, we use matrix multiplication:
+```
+Z = W × X + B
+A = σ(Z)
+```
+
+Where:
+- W = weight matrix
+- X = input matrix
+- B = bias vector
+- Z = weighted sum matrix
+- A = activated output matrix
+
+## Key Points:
+1. **Data flows forward** - no backward connections
+2. **Each layer transforms** the data
+3. **Weights determine importance** of connections
+4. **Activation functions add non-linearity** (crucial for learning complex patterns)

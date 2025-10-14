@@ -1,0 +1,181 @@
+import numpy as np
+
+class SimpleNeuralNetwork:
+    def __init__(self, input_size, hidden_size, output_size):
+        # Initialize weights randomly (small values)
+        self.weights1 = np.random.randn(hidden_size, input_size) * 0.1
+        self.biases1 = np.zeros((1, hidden_size))
+        
+        self.weights2 = np.random.randn(output_size, hidden_size) * 0.1
+        self.biases2 = np.zeros((1, output_size))
+    
+    def relu(self, x):
+        return np.maximum(0, x)
+    
+    def forward(self, X):
+        # Store for backpropagation
+        self.X = X
+        
+        # Forward propagation
+        self.z1 = np.dot(X, self.weights1.T) + self.biases1
+        self.a1 = self.relu(self.z1)
+        
+        self.z2 = np.dot(self.a1, self.weights2.T) + self.biases2
+        self.a2 = self.relu(self.z2)  # Output
+        
+        return self.a2
+
+# Usage
+nn = SimpleNeuralNetwork(input_size=2, hidden_size=3, output_size=1)
+X = np.array([[3.0, 2.0]])
+output = nn.forward(X)
+print("Prediction:", output)
+```
+
+## Key NumPy Concepts in the Code:
+
+1. **`np.dot()`** - Matrix multiplication
+2. **`.T`** - Transpose (important for proper matrix dimensions)
+3. **Broadcasting** - Adding bias vector to matrix automatically
+4. **Element-wise operations** - `np.maximum(0, x)` for ReLU
+
+## Dimension Checking (Very Important!):
+```python
+# For matrix multiplication to work:
+# (m, n) × (n, p) = (m, p)
+
+# If X is (1, 2) - 1 sample, 2 features
+# weights1.T is (2, 3) - transposed from (3, 2)
+# Result z1 is (1, 3) - 1 sample, 3 hidden neurons
+```
+
+## With Batch Processing:
+```python
+# Multiple samples at once
+X_batch = np.array([[3.0, 2.0],
+                    [1.0, 4.0],
+                    [2.5, 1.5]])  # 3 samples, 2 features each
+
+# Same weights work! The math handles the batch dimension
+z1 = np.dot(X_batch, weights1.T) + biases1  # Result: (3, 3)
+```
+
+The beauty of NumPy is that the same code works for single samples or batches of data!
+
+Does this help clarify how forward propagation looks in code? Would you like me to explain any specific part 
+in more detail?
+
+>>> explain how the relu is used in this case
+Great question! Let me explain how ReLU works in this neural network context.
+
+## What is ReLU?
+
+**ReLU** stands for **Rectified Linear Unit**. It's a simple but powerful activation function defined as:
+
+```
+ReLU(x) = max(0, x)
+```
+
+This means:
+- If x is positive: return x
+- If x is negative: return 0
+
+## Visual Representation:
+```
+    ReLU(x)
+      |
+    5 |    /
+      |   /
+    2 |  /
+      | /
+----+---------> x
+   0| 1  2  3
+    |
+-2 -1|
+      |
+```
+
+## How ReLU is Applied in Our Code:
+
+Let's trace through a specific example:
+
+```python
+import numpy as np
+
+# From our previous example
+z1 = np.array([[3.2, 2.5, 1.8]])  # Weighted sums from hidden layer
+
+# Apply ReLU
+a1 = np.maximum(0, z1)
+# or equivalently:
+# a1 = relu(z1) where relu(x) = np.maximum(0, x)
+
+print("Before ReLU (z1):", z1)    # [3.2, 2.5, 1.8]
+print("After ReLU (a1):", a1)     # [3.2, 2.5, 1.8] (same, all positive)
+```
+
+## What if we had negative values?
+
+```python
+z1_negative = np.array([[-1.2, 3.5, -0.8, 2.1]])
+
+a1 = np.maximum(0, z1_negative)
+print("Before ReLU:", z1_negative)  # [-1.2, 3.5, -0.8, 2.1]
+print("After ReLU:", a1)            # [0.0, 3.5, 0.0, 2.1]
+# Negative values become 0!
+```
+
+## Why Use ReLU?
+
+### 1. **Simplicity**: Easy to compute
+```python
+# Very fast computation
+def relu(x):
+    return np.maximum(0, x)  # Vectorized operation
+```
+
+### 2. **Non-linearity**: Without activation functions, neural networks would just be linear
+```python
+# Without activation: just matrix multiplication (linear)
+# With ReLU: introduces non-linear decision boundaries
+```
+
+### 3. **Avoids Vanishing Gradient**: Unlike sigmoid/tanh, ReLU doesn't squash large values
+
+### 4. **Sparsity**: Some neurons output 0, creating sparse representations
+
+## In the Context of Our Network:
+
+```python
+# Step 1: Linear transformation
+z1 = np.dot(X, weights1.T) + biases1  # Can be any real number
+
+# Step 2: Apply ReLU (introduce non-linearity)
+a1 = np.maximum(0, z1)  # Now values are 0 or positive
+
+# Step 3: Next layer uses these activated values
+z2 = np.dot(a1, weights2.T) + biases2  # Different distribution of values
+```
+
+## Comparison with Other Activation Functions:
+
+```python
+# Sigmoid: Squashes to (0, 1)
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+# Tanh: Squashes to (-1, 1)
+def tanh_activation(x):
+    return np.tanh(x)
+
+# ReLU: Keeps positive values, zeros negative ones
+def relu(x):
+    return np.maximum(0, x)
+```
+
+## Practical Impact:
+
+ReLU helps the network learn complex patterns because:
+1. It allows the network to learn non-linear relationships
+2. It's computationally efficient
+3. It helps with the gradient flow during backpropagation

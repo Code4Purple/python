@@ -1,0 +1,150 @@
+## Complete Example with Loss Function and Backpropagation
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+class NeuralNetworkWithLearning:
+    def __init__(self, input_size, hidden_size, output_size):
+        # Initialize weights with better practices
+        self.weights1 = np.random.randn(hidden_size, input_size) * 0.1
+        self.biases1 = np.zeros((1, hidden_size))
+        
+        self.weights2 = np.random.randn(output_size, hidden_size) * 0.1
+        self.biases2 = np.zeros((1, output_size))
+    
+    def relu(self, x):
+        return np.maximum(0, x)
+    
+    def relu_derivative(self, x):
+        # Derivative of ReLU for backpropagation
+        return (x > 0).astype(float)
+    
+    def forward(self, X):
+        # Store values for backpropagation
+        self.X = X
+        
+        # Forward propagation
+        self.z1 = np.dot(X, self.weights1.T) + self.biases1
+        self.a1 = self.relu(self.z1)
+        
+        self.z2 = np.dot(self.a1, self.weights2.T) + self.biases2
+        self.a2 = self.z2  # Linear output (no activation for regression)
+        
+        return self.a2
+    
+    def mean_squared_error(self, predictions, targets):
+        # Loss function
+        return np.mean((predictions - targets) ** 2)
+    
+    def mse_derivative(self, predictions, targets):
+        # Derivative of MSE for backpropagation
+        return 2 * (predictions - targets) / len(targets)
+    
+    def backward(self, X, y, learning_rate=0.01):
+        m = X.shape[0]  # number of samples
+        
+        # Output layer gradients
+        dZ2 = self.mse_derivative(self.a2, y)  # Gradient of loss w.r.t. output
+        dW2 = np.dot(dZ2.T, self.a1) / m
+        db2 = np.sum(dZ2, axis=0, keepdims=True) / m
+        
+        # Hidden layer gradients
+        dA1 = np.dot(dZ2, self.weights2)
+        dZ1 = dA1 * self.relu_derivative(self.z1)  # ReLU derivative!
+        dW1 = np.dot(dZ1.T, X) / m
+        db1 = np.sum(dZ1, axis=0, keepdims=True) / m
+        
+        # Update weights and biases
+        self.weights2 -= learning_rate * dW2
+        self.biases2 -= learning_rate * db2
+        self.weights1 -= learning_rate * dW1
+        self.biases1 -= learning_rate * db1
+    
+    def train(self, X, y, epochs=1000, learning_rate=0.01):
+        losses = []
+        
+        for epoch in range(epochs):
+            # Forward pass
+            predictions = self.forward(X)
+            
+            # Calculate loss
+            loss = self.mean_squared_error(predictions, y)
+            losses.append(loss)
+            
+            # Backward pass
+            self.backward(X, y, learning_rate)
+            
+            # Print progress
+            if epoch % 100 == 0:
+                print(f"Epoch {epoch}, Loss: {loss:.4f}")
+        
+        return losses
+
+# Example usage
+if __name__ == "__main__":
+    # Create sample data (simple linear relationship with noise)
+    np.random.seed(42)
+    X = np.random.randn(100, 2)  # 100 samples, 2 features
+    y = (2 * X[:, 0] + 3 * X[:, 1] + 1).reshape(-1, 1) + 0.1 * np.random.randn(100, 1)
+    
+    # Create and train network
+    nn = NeuralNetworkWithLearning(input_size=2, hidden_size=5, output_size=1)
+    
+    # Train the network
+    losses = nn.train(X, y, epochs=1000, learning_rate=0.01)
+    
+    # Test predictions
+    predictions = nn.forward(X[:5])
+    print("\nPredictions vs Actual:")
+    for i in range(5):
+        print(f"Predicted: {predictions[i][0]:.2f}, Actual: {y[i][0]:.2f}")
+    
+    # Plot loss curve
+    plt.figure(figsize=(10, 6))
+    plt.plot(losses)
+    plt.title('Training Loss Over Time')
+    plt.xlabel('Epoch')
+    plt.ylabel('Mean Squared Error')
+    plt.grid(True)
+    plt.show()
+```
+
+## Key Points About Loss Function + ReLU:
+
+### 1. **Loss Function Connection**:
+- The loss function measures how wrong our predictions are
+- ReLU affects the gradients during backpropagation
+- The chain rule flows through ReLU's derivative
+
+### 2. **ReLU's Role in Learning**:
+```python
+# During backpropagation:
+dZ1 = dA1 * self.relu_derivative(self.z1)
+#                    ↑
+#              This is where ReLU matters!
+#              Gradients flow only where ReLU was active (> 0)
+```
+
+### 3. **ReLU Derivative**:
+```python
+def relu_derivative(x):
+    return (x > 0).astype(float)
+    # Returns 1 where x > 0, 0 where x <= 0
+```
+
+### 4. **Training Loop**:
+1. **Forward**: Data flows through ReLU-activated neurons
+2. **Loss**: Calculate error using loss function
+3. **Backward**: Gradients flow back, affected by ReLU's derivative
+4. **Update**: Adjust weights to reduce loss
+
+## Why ReLU + Loss Works Well:
+
+1. **No Vanishing Gradients**: Unlike sigmoid, ReLU doesn't squash large values
+2. **Sparse Activation**: Some neurons output 0, creating efficient representations
+3. **Fast Computation**: Simple threshold operation
+4. **Effective Learning**: Gradients flow well through ReLU units
+
+The combination of ReLU activation and proper loss function with backpropagation is what enables the network 
+to actually learn from data!

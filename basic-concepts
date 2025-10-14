@@ -1,0 +1,40 @@
+## Basic Components
+
+### 1. **Neurons (Nodes)**
+- The basic building blocks
+- Receive inputs, process them, and produce an output
+- Similar to biological neurons in your brain
+
+### 2. **Layers**
+- **Input Layer**: Receives the raw data
+- **Hidden Layer(s)**: Process the information (can be one or many)
+- **Output Layer**: Produces the final prediction
+
+### 3. **Weights and Biases**
+- **Weights**: Determine the strength of connections between neurons
+- **Biases**: Allow shifting the activation function left/right
+- These are the parameters that get "learned" during training
+
+### 4. **Activation Functions**
+- Introduce non-linearity into the network
+- Common examples: ReLU, Sigmoid, Tanh
+- Decide whether a neuron should "fire" or not
+
+## How it Works (High Level)
+
+1. **Forward Propagation**: 
+   - Data flows from input → hidden layers → output
+   - Each connection has a weight, each neuron applies an activation function
+
+2. **Loss Calculation**: 
+   - Compare predictions with actual values
+   - Measure how "wrong" the network is
+
+3. **Backpropagation**: 
+   - Calculate how much each weight contributed to the error
+   - Adjust weights to reduce error
+
+4. **Training**: 
+   - Repeat the process many times to improve accuracy
+
+
