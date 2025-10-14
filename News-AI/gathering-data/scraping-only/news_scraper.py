@@ -1,20 +1,20 @@
-# news_scraper.py
+# news_scraper.py (enhanced version)
 import requests
 import sqlite3
 import time
-import os
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 from bs4 import BeautifulSoup
 import logging
 import random
+import json
 
-# Create db directory if it doesn't exist
+# Set up logging
 DB_DIR = "db"
+import os
 if not os.path.exists(DB_DIR):
     os.makedirs(DB_DIR)
 
-# Set up logging to db folder
 logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 class NewsScraper:
     def __init__(self, db_path: str = os.path.join(DB_DIR, "news_data.db")):
         """
-        Initialize the news scraper with clean folder structure
+        Enhanced news scraper with multiple collection strategies
         """
         self.db_path = db_path
         self.setup_database()
@@ -45,33 +45,39 @@ class NewsScraper:
         
         # User agents to rotate and avoid blocking
         self.user_agents = [
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         ]
     
     def get_default_sources(self) -> List[Dict]:
-        """Default news sources if config file is missing"""
+        """Default news sources with archive support"""
         return [
             {
                 'name': 'BBC News',
                 'base_url': 'https://www.bbc.com',
                 'url': 'https://www.bbc.com/news',
+                'archive_url_pattern': 'https://www.bbc.com/news/archive/{year}-{month:02d}-{day:02d}',
                 'selectors': {
                     'article_links': 'a[href*="/news/"]',
                     'title': 'h1',
-                    'content': 'article'
-                }
+                    'content': ['div[data-component="text-block"]', 'article']
+                },
+                'supports_archive': True,
+                'max_articles': 20
             },
             {
                 'name': 'Reuters',
                 'base_url': 'https://www.reuters.com',
                 'url': 'https://www.reuters.com/world/',
+                'archive_url_pattern': 'https://www.reuters.com/world/archive/{year}-{month:02d}-{day:02d}/',
                 'selectors': {
                     'article_links': 'a[href*="/world/"]',
                     'title': 'h1',
-                    'content': 'div[data-testid="ArticleBody"]'
-                }
+                    'content': ['div[data-testid="ArticleBody"]', 'div[class*="ArticleBody"]']
+                },
+                'supports_archive': True,
+                'max_articles': 20
             }
         ]
     
@@ -89,14 +95,15 @@ class NewsScraper:
                 url TEXT UNIQUE,
                 source TEXT,
                 published_at TIMESTAMP,
-                collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                collection_method TEXT
             )
         ''')
         
-        # Create index for faster queries
-        cursor.execute('''
-            CREATE INDEX IF NOT EXISTS idx_collected_at ON news_articles(collected_at)
-        ''')
+        # Create indexes for faster queries
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_collected_at ON news_articles(collected_at)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_published_at ON news_articles(published_at)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_source ON news_articles(source)')
         
         conn.commit()
         conn.close()
@@ -120,14 +127,14 @@ class NewsScraper:
                 return None
         return None
     
-    def get_collection_window(self) -> tuple:
+    def get_collection_window(self, initial_collection_days: int = 365*10) -> tuple:
         """Get the time window for data collection"""
         now = datetime.now()
         
-        # If this is first run or no previous data, collect last 24 hours
+        # If this is first run or no previous data, collect default period
         if not self.last_collection_time:
-            from_time = now - timedelta(hours=24)
-            logger.info("First collection - will collect last 24 hours of data")
+            from_time = now - timedelta(days=initial_collection_days)
+            logger.info(f"First collection - will collect last {initial_collection_days} days of data")
         else:
             from_time = self.last_collection_time
             logger.info(f"Collecting data from {from_time} to {now}")
@@ -142,13 +149,14 @@ class NewsScraper:
             'Accept-Language': 'en-US,en;q=0.5',
             'Accept-Encoding': 'gzip, deflate',
             'Connection': 'keep-alive',
+            'Referer': 'https://www.google.com/',
         }
     
     def scrape_page(self, url: str) -> Optional[BeautifulSoup]:
         """Scrape a webpage and return BeautifulSoup object"""
         try:
             headers = self.get_random_headers()
-            response = requests.get(url, headers=headers, timeout=15)
+            response = requests.get(url, headers=headers, timeout=20)
             response.raise_for_status()
             
             soup = BeautifulSoup(response.content, 'html.parser')
@@ -158,11 +166,11 @@ class NewsScraper:
             logger.error(f"Error scraping {url}: {e}")
             return None
     
-    def scrape_source_articles(self, source_config: Dict) -> List[Dict]:
-        """Scrape articles from a specific news source"""
+    def scrape_current_news(self, source_config: Dict) -> List[Dict]:
+        """Scrape current news from main pages"""
         articles = []
         source_name = source_config.get('name', 'Unknown')
-        logger.info(f"Scraping {source_name}...")
+        logger.info(f"Scraping current news from {source_name}...")
         
         soup = self.scrape_page(source_config['url'])
         if not soup:
@@ -192,20 +200,92 @@ class NewsScraper:
                     if source_config['base_url'] in full_url and full_url not in processed_urls:
                         article_data = self.scrape_article(full_url, source_config)
                         if article_data:
+                            article_data['collection_method'] = 'current'
                             articles.append(article_data)
                             processed_urls.append(full_url)
                     
                     # Be respectful - add delay
-                    time.sleep(0.5)
+                    time.sleep(1)
                     
                 except Exception as e:
-                    logger.error(f"Error processing link from {source_name}: {e}")
+                    logger.debug(f"Error processing link from {source_name}: {e}")
                     continue
             
         except Exception as e:
             logger.error(f"Error scraping source {source_name}: {e}")
         
-        logger.info(f"Scraped {len(articles)} articles from {source_name}")
+        logger.info(f"Scraped {len(articles)} current articles from {source_name}")
+        return articles
+    
+    def scrape_historical_archive(self, source_config: Dict, target_date: datetime) -> List[Dict]:
+        """Scrape historical news from archive pages"""
+        if not source_config.get('supports_archive', False):
+            logger.debug(f"{source_config['name']} does not support archive scraping")
+            return []
+        
+        articles = []
+        source_name = source_config.get('name', 'Unknown')
+        
+        # Generate archive URL
+        try:
+            archive_url = source_config['archive_url_pattern'].format(
+                year=target_date.year,
+                month=target_date.month,
+                day=target_date.day
+            )
+        except KeyError:
+            logger.warning(f"No archive URL pattern for {source_name}")
+            return articles
+        
+        logger.info(f"Scraping archive for {source_name} - {target_date.strftime('%Y-%m-%d')}")
+        
+        soup = self.scrape_page(archive_url)
+        if not soup:
+            return articles
+        
+        try:
+            # Find article links in archive
+            link_selector = source_config['selectors'].get('article_links', 'a')
+            article_links = soup.select(link_selector)
+            
+            processed_urls = []
+            max_articles = source_config.get('max_articles', 10)
+            
+            for link in article_links[:max_articles]:
+                try:
+                    href = link.get('href')
+                    if not href:
+                        continue
+                    
+                    # Make absolute URL
+                    if href.startswith('/'):
+                        full_url = urljoin(source_config['base_url'], href)
+                    else:
+                        full_url = href
+                    
+                    # Validate URL
+                    if source_config['base_url'] in full_url and full_url not in processed_urls:
+                        article_data = self.scrape_article(full_url, source_config)
+                        if article_data:
+                            # Set the historical date
+                            article_data['published_at'] = target_date.isoformat()
+                            article_data['collection_method'] = 'archive'
+                            articles.append(article_data)
+                            processed_urls.append(full_url)
+                    
+                    # Be respectful - add delay
+                    time.sleep(1.5)
+                    
+                except Exception as e:
+                    logger.debug(f"Error processing archive link from {source_name}: {e}")
+                    continue
+            
+        except Exception as e:
+            logger.error(f"Error scraping archive for {source_name}: {e}")
+        
+        if articles:
+            logger.info(f"Scraped {len(articles)} historical articles from {source_name} archive")
+        
         return articles
     
     def scrape_article(self, url: str, source_config: Dict) -> Optional[Dict]:
@@ -236,7 +316,7 @@ class NewsScraper:
             # Fallback to paragraphs if no specific content selector works
             if not content:
                 paragraphs = soup.find_all('p')
-                content = ' '.join([p.get_text().strip() for p in paragraphs[:15]])
+                content = ' '.join([p.get_text().strip() for p in paragraphs[:20]])
             
             # Extract description (first part of content)
             description = content[:300] + "..." if len(content) > 300 else content
@@ -268,15 +348,16 @@ class NewsScraper:
             try:
                 cursor.execute('''
                     INSERT OR IGNORE INTO news_articles 
-                    (title, description, content, url, source, published_at)
-                    VALUES (?, ?, ?, ?, ?, ?)
+                    (title, description, content, url, source, published_at, collection_method)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
                 ''', (
                     article.get('title', ''),
                     article.get('description', ''),
                     article.get('content', ''),
                     article.get('url', ''),
                     article.get('source', 'Unknown'),
-                    article.get('published_at')
+                    article.get('published_at'),
+                    article.get('collection_method', 'unknown')
                 ))
                 
                 if cursor.rowcount > 0:
@@ -291,26 +372,67 @@ class NewsScraper:
         logger.info(f"Stored {stored_count} new articles in database")
         return stored_count
     
-    def collect_data_since_last_collection(self) -> int:
-        """Collect data from last collection time to current time"""
-        logger.info("Starting data collection...")
-        
-        from_time, to_time = self.get_collection_window()
+    def collect_historical_data(self, from_date: datetime, to_date: datetime) -> int:
+        """Collect historical data by date range"""
+        logger.info(f"Starting historical data collection: {from_date.date()} to {to_date.date()}")
         
         total_articles = 0
+        current_date = from_date
         
-        # Scrape all configured sources
-        for source in self.news_sources:
-            try:
-                articles = self.scrape_source_articles(source)
-                stored_count = self.store_articles(articles)
-                total_articles += stored_count
-                time.sleep(2)  # Be extra respectful between sources
-            except Exception as e:
-                logger.error(f"Error collecting from {source.get('name', 'Unknown')}: {e}")
+        # Collect data day by day for better organization
+        while current_date <= to_date:
+            logger.info(f"Collecting data for {current_date.strftime('%Y-%m-%d')}")
+            
+            # For each source, try archive scraping first, then current scraping
+            for source in self.news_sources:
+                try:
+                    # Try archive scraping for historical dates
+                    if current_date.date() < datetime.now().date():
+                        articles = self.scrape_historical_archive(source, current_date)
+                    else:
+                        # For today, use current news scraping
+                        articles = self.scrape_current_news(source)
+                    
+                    stored_count = self.store_articles(articles)
+                    total_articles += stored_count
+                    
+                    # Be extra respectful between sources and dates
+                    time.sleep(3)
+                    
+                except Exception as e:
+                    logger.error(f"Error collecting from {source.get('name', 'Unknown')}: {e}")
+            
+            current_date += timedelta(days=1)
         
-        logger.info(f"Data collection completed. Total new articles: {total_articles}")
+        logger.info(f"Historical data collection completed. Total new articles: {total_articles}")
         return total_articles
+    
+    def collect_data_since_last_collection(self, initial_collection_days: int = 365*10) -> int:
+        """Collect data from last collection time to current time"""
+        from_time, to_time = self.get_collection_window(initial_collection_days)
+        
+        # For large time ranges, collect in chunks
+        if (to_time - from_time).days > 365:
+            logger.info("Large time range detected, using chunked collection...")
+            return self.collect_historical_data(from_time, to_time)
+        else:
+            # Standard collection for smaller ranges
+            logger.info("Starting standard data collection...")
+            
+            total_articles = 0
+            
+            # Scrape all configured sources for current news
+            for source in self.news_sources:
+                try:
+                    articles = self.scrape_current_news(source)
+                    stored_count = self.store_articles(articles)
+                    total_articles += stored_count
+                    time.sleep(2)  # Be extra respectful between sources
+                except Exception as e:
+                    logger.error(f"Error collecting from {source.get('name', 'Unknown')}: {e}")
+            
+            logger.info(f"Data collection completed. Total new articles: {total_articles}")
+            return total_articles
     
     def get_articles_since_last_collection(self) -> List[Dict]:
         """Get articles collected since last collection"""
@@ -319,16 +441,16 @@ class NewsScraper:
         
         if self.last_collection_time:
             cursor.execute('''
-                SELECT title, description, content, url, source, published_at, collected_at
+                SELECT title, description, content, url, source, published_at, collected_at, collection_method
                 FROM news_articles 
                 WHERE collected_at >= ?
                 ORDER BY collected_at DESC
             ''', (self.last_collection_time.isoformat(),))
         else:
-            # If no last collection time, get last 24 hours
-            since_time = datetime.now() - timedelta(hours=24)
+            # If no last collection time, get last 10 years
+            since_time = datetime.now() - timedelta(days=365*10)
             cursor.execute('''
-                SELECT title, description, content, url, source, published_at, collected_at
+                SELECT title, description, content, url, source, published_at, collected_at, collection_method
                 FROM news_articles 
                 WHERE collected_at >= ?
                 ORDER BY collected_at DESC
@@ -343,21 +465,22 @@ class NewsScraper:
                 'url': row[3],
                 'source': row[4],
                 'published_at': row[5],
-                'collected_at': row[6]
+                'collected_at': row[6],
+                'collection_method': row[7]
             })
         
         conn.close()
         return articles
     
-    def get_all_articles(self, limit: int = 1000) -> List[Dict]:
+    def get_all_articles(self, limit: int = 10000) -> List[Dict]:
         """Get all articles from database (with limit)"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
         cursor.execute('''
-            SELECT title, description, content, url, source, published_at, collected_at
+            SELECT title, description, content, url, source, published_at, collected_at, collection_method
             FROM news_articles 
-            ORDER BY collected_at DESC
+            ORDER BY published_at DESC
             LIMIT ?
         ''', (limit,))
         
@@ -370,39 +493,46 @@ class NewsScraper:
                 'url': row[3],
                 'source': row[4],
                 'published_at': row[5],
-                'collected_at': row[6]
+                'collected_at': row[6],
+                'collection_method': row[7]
             })
         
         conn.close()
         return articles
     
-    def run_collection(self):
-        """Run data collection (this is the main function to call)"""
-        logger.info("=" * 60)
-        logger.info("NEWS DATA COLLECTION STARTED")
-        logger.info("=" * 60)
+    def run_collection(self, initial_collection_days: int = 365*10):
+        """Run data collection with enhanced historical support"""
+        logger.info("=" * 70)
+        logger.info("ENHANCED NEWS DATA COLLECTION STARTED")
+        logger.info("=" * 70)
         
         # Show collection window
-        from_time, to_time = self.get_collection_window()
+        from_time, to_time = self.get_collection_window(initial_collection_days)
         logger.info(f"Collection window: {from_time} to {to_time}")
+        logger.info(f"Days to collect: {(to_time - from_time).days}")
         
         # Collect data
-        collected_count = self.collect_data_since_last_collection()
+        collected_count = self.collect_data_since_last_collection(initial_collection_days)
         
         # Get articles from this session
         recent_articles = self.get_articles_since_last_collection()
         
-        logger.info("=" * 60)
+        logger.info("=" * 70)
         logger.info("COLLECTION SUMMARY")
-        logger.info("=" * 60)
+        logger.info("=" * 70)
         logger.info(f"New articles collected: {collected_count}")
         logger.info(f"Articles available for processing: {len(recent_articles)}")
-        logger.info("=" * 60)
+        logger.info("=" * 70)
         
         return {
             'new_articles': collected_count,
             'total_available': len(recent_articles),
-            'articles': recent_articles
+            'articles': recent_articles,
+            'collection_period': {
+                'from': from_time.isoformat(),
+                'to': to_time.isoformat(),
+                'days': (to_time - from_time).days
+            }
         }
 
 # Utility functions
@@ -415,5 +545,3 @@ def urljoin(base: str, url: str) -> str:
     if not base.endswith('/') and not url.startswith('/'):
         return base + '/' + url
     return base + url
-
-
