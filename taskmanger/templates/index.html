@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Task Manager{% endblock %}
+
+{% block content %}
+<div class="task-manager">
+    <h2>Task Manager</h2>
+    
+    <form action="{{ url_for('add_task') }}" method="POST" class="task-form">
+        <input type="text" name="task" placeholder="Enter a new task..." required>
+        <button type="submit">Add Task</button>
+    </form>
+    
+    <div class="tasks">
+        {% if tasks %}
+            {% for task in tasks %}
+            <div class="task-item {% if task.done %}completed{% endif %}">
+                <div class="task-content">
+                    <input type="checkbox" 
+                           {% if task.done %}checked{% endif %}
+                           onclick="window.location.href='{{ url_for('toggle_task', task_id=task.id) }}'">
+                    <span class="task-text">{{ task.text }}</span>
+                </div>
+                <a href="{{ url_for('delete_task', task_id=task.id) }}" class="delete-btn">Delete</a>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="no-tasks">No tasks yet. Add one above!</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
