@@ -75,7 +75,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/engi/Applications/Github/active-repos/python/financialAnalyst-nogui
+set -gx VIRTUAL_ENV /home/alex/Applications/Github/active-repos/python/financialAnalyst-nogui
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (string sub -s 1 -l 1 $FISH_VERSION) -lt 3
