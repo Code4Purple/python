@@ -1,0 +1,69 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+4/17/2025    Purchase authorized on 04/15 Tst*Oscars Tacos - Nashville TN $      13.17 Withdrawal  
+4/17/2025    Purchase authorized on 04/15 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/17/2025    Purchase authorized on 04/15 DD *Doordash Redro    $      47.60 Withdrawal  
+4/18/2025    Recurring Payment authorized on 04/17 Samsclub #8294 $      11.61 Withdrawal  
+4/18/2025    Purchase authorized on 04/18 Shell Service Station Nashville $      12.79 Withdrawal  
+4/21/2025    Purchase authorized on 04/17 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/21/2025    Purchase authorized on 04/18 Walgreens #12514      $      14.18 Withdrawal  
+4/21/2025    Purchase authorized on 04/18 Tst* Nudie's Honky Nashville TN $      17.46 Withdrawal  
+4/21/2025    Purchase authorized on 04/18 MS Kellis Karaoke Nashville TN $      11.40 Withdrawal  
+4/21/2025    Purchase authorized on 04/18 Tst* Velvet Taco - Nashville TN $       8.73 Withdrawal  
+4/21/2025    Purchase authorized on 04/19 Aci Learning 303-832-4665 CO $      59.00 Withdrawal  
+4/21/2025    Purchase authorized on 04/21 Racetrac2559 Murfreesboro TN $       3.05 Withdrawal  
+4/21/2025    Purchase authorized on 04/21 Dollar-General # Dg 02915 $       0.82 Withdrawal  
+4/22/2025    Purchase authorized on 04/21 McDonald's F6897 Nashville TN $       5.49 Withdrawal  
+4/22/2025    Purchase authorized on 04/21 Subway 17890 Murfreesboro TN $      32.36 Withdrawal  
+4/22/2025    Purchase authorized on 04/22 Shell Service Station Nashville $       6.30 Withdrawal  
+4/23/2025    IRS Treas 310 Tax Ref 042325 xxxxxxxxxx00928       $     663.25 Withdrawal  
+4/23/2025    Purchase authorized on 04/21 Racetrac2559 0002     $      24.73 Withdrawal  
+4/23/2025    Recurring Payment authorized on 04/23 Ring Basic Plan $       4.99 Withdrawal  
+4/24/2025    Purchase authorized on 04/22 Nyx*Five Star Food Hunt Valley $       2.65 Withdrawal  
+4/24/2025    Purchase authorized on 04/22 China House Antioch TN $      11.74 Withdrawal  
+4/24/2025    Purchase authorized on 04/23 McDonald's F6897 Nashville TN $       6.90 Withdrawal  
+4/24/2025    Purchase authorized on 04/23 Samsclub #6501 Murfreesboro $      53.31 Withdrawal  
+4/24/2025    Purchase authorized on 04/24 Shell Service Station Nashville $       8.01 Withdrawal  
+4/25/2025    Purchase authorized on 04/23 Raising Canes 1067    $      11.29 Withdrawal  
+4/25/2025    Purchase authorized on 04/24 Southeast Financia    $     266.05 Withdrawal  
+4/25/2025    Purchase authorized on 04/25 Chicago Style Gyros Nashville TN $      14.26 Withdrawal  
+4/28/2025    Purchase authorized on 04/24 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+4/28/2025    Purchase authorized on 04/24 State Farm Insura 800-956-6310 $     488.49 Withdrawal  
+4/28/2025    Purchase authorized on 04/24 Steamgames.Com 425    $      54.86 Withdrawal  
+4/28/2025    Purchase authorized on 04/24 Jonathans Grille M    $      37.49 Withdrawal  
+4/28/2025    Purchase authorized on 04/25 Ctlp*Ten Elite Ven Antioch TN $       2.20 Withdrawal  
+4/28/2025    Purchase authorized on 04/26 Volkswagen of Murf    $    1105.78 Withdrawal  
+4/28/2025    Purchase authorized on 04/26 Racetrac2559 0002     $      31.42 Withdrawal  
+4/28/2025    Purchase authorized on 04/27 Cracker Barrel # 138 Chaf $       7.67 Withdrawal  
+4/29/2025    Purchase authorized on 04/27 Starbucks Store 53    $      13.88 Withdrawal  
+4/29/2025    Purchase authorized on 04/28 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/29/2025    Purchase authorized on 04/28 Racetrac2559 Murfreesboro TN $      21.70 Withdrawal  
+4/29/2025    Purchase authorized on 04/29 Walgreens Store 2401 Old $      26.16 Withdrawal  
+4/30/2025    Purchase authorized on 04/28 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  
+4/30/2025    Purchase authorized on 04/30 Twice Daily W Bison 6055 $       7.45 Withdrawal  
+5/1/2025     Purchase authorized on 04/29 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+5/1/2025     Purchase authorized on 04/30 Nyx*Five Star Food Hunt Valley $       2.65 Withdrawal  
+5/1/2025     Purchase authorized on 04/30 Shell Service Station $       6.89 Withdrawal  
+5/1/2025     Purchase authorized on 05/01 Kroger #5 2449 Old for $      27.42 Withdrawal  
+5/1/2025     Purchase authorized on 05/01 Petsmart # 0648 Murfreesboro $     114.12 Withdrawal  
+5/1/2025     Purchase authorized on 05/01 WM Superc 2000 Old for $       6.73 Withdrawal  
+5/1/2025     Purchase authorized on 05/01 Walgreens Store 2611 8th $       5.77 Withdrawal  
+5/2/2025     Purchase authorized on 04/30 Wendys 638 Murfreesboro TN $      20.06 Withdrawal  
+5/2/2025     Purchase authorized on 05/02 Racetrac2559 Murfreesboro TN $       6.59 Withdrawal  
+5/5/2025     Purchase authorized on 05/02 Racetrac2559 0002     $      30.12 Withdrawal  
+5/5/2025     Purchase authorized on 05/03 Bps*Bilt Rewards C    $    1811.36 Withdrawal  
+5/5/2025     Purchase authorized on 05/04 Best Buy 00014258     $     131.68 Withdrawal  
+5/6/2025     Purchase authorized on 05/05 Southeast Financia    $     278.73 Withdrawal  
+5/7/2025     Purchase authorized on 05/05 Nyx*Five Star Food Hunt Valley $       3.15 Withdrawal  
+5/7/2025     Purchase authorized on 05/06 Nyx*Five Star Food Hunt Valley $       2.65 Withdrawal  
+5/7/2025     Purchase authorized on 05/07 Walgreens Store 2401 Old $       7.25 Withdrawal  
+5/9/2025     Purchase authorized on 05/08 Samsclub #6501 Murfreesboro $      32.62 Withdrawal  
+5/9/2025     Purchase authorized on 05/08 Nyx*Five Star Food Hunt Valley $       1.15 Withdrawal  
+5/9/2025     Purchase authorized on 05/08 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  
+5/12/2025    Purchase authorized on 05/09 Racetrac2559 0002     $      30.31 Withdrawal  
+5/12/2025    Recurring Payment authorized on 05/10 Hulu 877-8244858 $      39.40 Withdrawal  
+5/12/2025    Purchase authorized on 05/10 Dq Grill & Chill # Murfreesboro $      23.45 Withdrawal  
+5/13/2025    Instant Pmt From Venmo on 05/13                    $     407.74 Withdrawal  
+5/13/2025    Recurring Payment authorized on 05/12 Github, Inc. $      10.98 Withdrawal  
+5/13/2025    Recurring Payment authorized on 05/12 Amazon Prime*NW2Tz Amzn.Com/Bill WA S305132761488109 Card $      16.41 Withdrawal  
+5/15/2025    Purchase authorized on 05/13 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  

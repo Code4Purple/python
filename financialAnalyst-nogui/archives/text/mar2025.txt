@@ -1,0 +1,75 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+3/18/2025    Purchase authorized on 03/16 Taco Bell 036466 Nashville TN $      19.38 Withdrawal  
+3/18/2025    Purchase authorized on 03/17 McDonald's F1421 Nashville TN $      10.09 Withdrawal  
+3/18/2025    Purchase authorized on 03/18 Racetrac2559 Murfreesboro TN $       9.31 Withdrawal  
+3/19/2025    Purchase authorized on 03/16 Whataburger 1354      $      34.43 Withdrawal  
+3/19/2025    Purchase authorized on 03/19 Shell Service Station Nashville $       2.12 Withdrawal  
+3/20/2025    Purchase authorized on 03/18 Tst*Oscars Tacos - Nashville TN $      12.63 Withdrawal  
+3/21/2025    Purchase authorized on 03/19 Tst*Oscars Tacos - Nashville TN $      12.63 Withdrawal  
+3/21/2025    Purchase authorized on 03/19 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/21/2025    Purchase authorized on 03/19 Aci Learning 303-832-4665 CO $      59.00 Withdrawal  
+3/21/2025    Purchase authorized on 03/20 Subway 3148 Nashville TN $      11.29 Withdrawal  
+3/21/2025    Purchase authorized on 03/21 Kroger #5 2449 Old for $      50.07 Withdrawal  
+3/24/2025    Purchase authorized on 03/21 Tst*Oscars Tacos - Nashville TN $      12.63 Withdrawal  
+3/24/2025    Purchase authorized on 03/21 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/24/2025    Purchase authorized on 03/22 DD *Doordash Cvs      $      29.05 Withdrawal  
+3/24/2025    Recurring Payment authorized on 03/23 Ring Basic Plan $       4.99 Withdrawal  
+3/24/2025    Purchase authorized on 03/23 Google *Tv G.CO/Helppay# CA $       9.99 Withdrawal  
+3/24/2025    Purchase authorized on 03/24 Kroger Fu 2449 Old for $      28.52 Withdrawal  
+3/25/2025    Purchase authorized on 03/21 Wl *Steam Purchase    $      15.13 Withdrawal  
+3/25/2025    Purchase authorized on 03/25 Kroger #5 2449 Old for $      44.08 Withdrawal  
+3/26/2025    Purchase authorized on 03/24 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/26/2025    Purchase authorized on 03/24 Tst*Oscars Tacos - Nashville TN $      13.72 Withdrawal  
+3/26/2025    Purchase authorized on 03/24 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/26/2025    Purchase authorized on 03/26 Kroger #5 2449 Old for $      51.42 Withdrawal  
+3/27/2025    Purchase authorized on 03/25 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/28/2025    Purchase authorized on 03/26 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/28/2025    Purchase authorized on 03/26 Tst*Oscars Tacos - Nashville TN $      12.63 Withdrawal  
+3/31/2025    Purchase authorized on 03/27 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/31/2025    Purchase authorized on 03/28 Z Mart 6 #1 37217 Nashville TN $       1.11 Withdrawal  
+3/31/2025    Purchase authorized on 03/28 Tst*Oscars Tacos - Nashville TN $      15.92 Withdrawal  
+3/31/2025    Purchase authorized on 03/28 Domino's 1531 615-427-0898 $      33.29 Withdrawal  
+3/31/2025    Purchase authorized on 03/29 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+3/31/2025    Purchase authorized on 03/29 State Farm Insura 800-956-6310 $     558.76 Withdrawal  
+3/31/2025    Purchase authorized on 03/29 DD *Doordash Dolla    $      22.87 Withdrawal  
+3/31/2025    Purchase authorized on 03/31 Shell Service Station Nashville $       3.19 Withdrawal  
+3/31/2025    Purchase authorized on 03/31 Shell Service Station $      28.13 Withdrawal  
+4/1/2025     Purchase authorized on 04/01 Shell Service Station Nashville $       3.19 Withdrawal  
+4/1/2025     Purchase authorized on 04/01 Kroger #5 2449 Old for $      16.22 Withdrawal  
+4/2/2025     Purchase authorized on 03/31 Tst*Oscars Tacos - Nashville TN $      12.63 Withdrawal  
+4/2/2025     Purchase authorized on 03/31 State Farm Insura 800-956-6310 $      30.00 Withdrawal  
+4/2/2025     Purchase authorized on 03/31 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+4/2/2025     Purchase authorized on 04/01 Subway 3148 Nashville TN $      14.70 Withdrawal  
+4/3/2025     Purchase authorized on 04/01 DD *Doordash Culve    $      20.44 Withdrawal  
+4/3/2025     Purchase authorized on 04/02 McDonald's F6897 Nashville TN $       4.38 Withdrawal  
+4/3/2025     Purchase authorized on 04/03 Shell Service Station Nashville $       6.92 Withdrawal  
+4/4/2025     Purchase authorized on 04/02 Nyx*Five Star Food Hunt Valley $       1.90 Withdrawal  
+4/7/2025     Purchase authorized on 04/03 Steamgames.Com 425    $      53.77 Withdrawal  
+4/7/2025     Purchase authorized on 04/03 DD *Doordash Arbys    $      22.27 Withdrawal  
+4/7/2025     Purchase authorized on 04/03 DD *Doordash McDon    $       2.13 Withdrawal  
+4/7/2025     Purchase authorized on 04/04 Chipotle 4690 Nashville TN $      18.49 Withdrawal  
+4/7/2025     Purchase authorized on 04/04 Burger King #23308    $      15.90 Withdrawal  
+4/7/2025     Purchase authorized on 04/05 Bps*Bilt Rewards C    $    1706.95 Withdrawal  
+4/7/2025     Purchase authorized on 04/06 Cracker Barrel # 138 Chaf $      55.45 Withdrawal  
+4/7/2025     Purchase authorized on 04/07 Shell Service Station Nashville $       3.51 Withdrawal  
+4/7/2025     Purchase authorized on 04/07 Walgreens Store 2401 Old $       8.73 Withdrawal  
+4/7/2025     Purchase authorized on 04/07 Kroger Fu 2449 Old for $      25.87 Withdrawal  
+4/8/2025     Purchase authorized on 04/07 McDonald's F6897 Nashville TN $       4.38 Withdrawal  
+4/8/2025     Purchase authorized on 04/07 McDonald's F24675     $      23.23 Withdrawal  
+4/8/2025     Sallie Mae Bank Slmloanpmt 250406 5642069959 Slm Loan $     208.05 Withdrawal  
+4/9/2025     Purchase authorized on 04/07 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/10/2025    Purchase authorized on 04/08 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/10/2025    Purchase authorized on 04/10 Shell Service Station Nashville $       5.87 Withdrawal  
+4/11/2025    Purchase authorized on 04/09 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+4/11/2025    Purchase authorized on 04/09 Hardees 1501870 Murfreesboro $      21.16 Withdrawal  
+4/11/2025    Recurring Payment authorized on 04/10 Hlu*Huluplus $      39.40 Withdrawal  
+4/11/2025    Purchase authorized on 04/11 Kroger #5 2449 Old for $      22.16 Withdrawal  
+4/14/2025    Purchase authorized on 04/10 Tst*Oscars Tacos - Nashville TN $      13.72 Withdrawal  
+4/14/2025    Purchase authorized on 04/11 Arbys 1742 Nashville TN $      13.82 Withdrawal  
+4/14/2025    Recurring Payment authorized on 04/12 Github, Inc. $      10.98 Withdrawal  
+4/14/2025    Purchase authorized on 04/12 Amazon Prime*Y85Bw    $      16.41 Withdrawal  
+4/14/2025    Purchase authorized on 04/13 Walgreens Store 2401 Old $      30.81 Withdrawal  
+4/14/2025    Purchase authorized on 04/14 Kroger #5 2449 Old for $      11.61 Withdrawal  
+4/14/2025    Purchase authorized on 04/14 Kroger Fu 2449 Old for $      23.48 Withdrawal  
+4/15/2025    Purchase authorized on 04/14 McDonald's F6897 Nashville TN $       6.56 Withdrawal  

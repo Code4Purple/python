@@ -1,0 +1,15 @@
+rent : 900
+statefarm : 223.72
+statefarm : 24.37
+salie mae: 240.71
+car loan : 253.55
+hulu : 36.12
+trilogy+ : 5.60
+gym:  15.00
+buget for weeks: 200 
+
+
+----------------------------------------------
+	If i have to pay out of pocket 
+----------------------------------------------
+	% out of pocket then payment plan without fadsa

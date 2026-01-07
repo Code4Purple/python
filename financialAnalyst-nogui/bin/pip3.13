@@ -1,4 +1,4 @@
-#!/home/alex/Applications/Github/active-repos/python/financialAnalyst-nogui/bin/python
+#!/home/engi/Applications/Github/active-repos/python/financialAnalyst-nogui/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

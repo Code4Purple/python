@@ -1,0 +1,72 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+11/19/2025   Purchase authorized on 11/17 Pizza Hut 004407 Murfreesboro $      18.43 Withdrawal  
+11/19/2025   Purchase authorized on 11/19 Sams Club #6501 Murfreesboro $      27.45 Withdrawal  
+11/20/2025   Purchase authorized on 11/18 Steamgames.Com 425    $      21.94 Withdrawal  
+11/21/2025   Purchase authorized on 11/18 Wl *Steam Purchase    $      52.67 Withdrawal  
+11/21/2025   Purchase authorized on 11/19 Sport Clips TN218 Murfreesboro $      45.00 Withdrawal  
+11/21/2025   Purchase authorized on 11/20 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+11/21/2025   Purchase authorized on 11/20 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/21/2025   Zelle to Thomas McKinzie on 11/21 Ref # Wfct0Zj2L84D $     100.00 Withdrawal  
+11/21/2025   Zelle to Thomas McKinzie on 11/21 Ref # Wfct0Zj2L9Jn Save for $     100.00 Withdrawal  
+11/24/2025   Purchase authorized on 11/21 State Farm Insura 800-956-6310 $     223.72 Withdrawal  
+11/24/2025   Purchase authorized on 11/21 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+11/24/2025   Purchase authorized on 11/21 McDonald's F1421 Nashville TN $      13.38 Withdrawal  
+11/24/2025   Purchase authorized on 11/21 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+11/24/2025   Purchase authorized on 11/21 Outback 4320 Murfreesboro TN $     122.68 Withdrawal  
+11/24/2025   Purchase authorized on 11/22 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/24/2025   Purchase authorized on 11/22 The Home Depot #0707  $      15.87 Withdrawal  
+11/24/2025   Purchase authorized on 11/22 Lowe's #659 Murfreesboro TN $      26.32 Withdrawal  
+11/24/2025   Recurring Payment authorized on 11/23 Ring Basic Plan $       4.99 Withdrawal  
+11/24/2025   Purchase authorized on 11/23 Shell Service Station $      28.13 Withdrawal  
+11/24/2025   Purchase authorized on 11/23 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+11/24/2025   Purchase authorized on 11/23 Racetrac 2559 Murfreesboro TN $       7.13 Withdrawal  
+11/24/2025   Purchase authorized on 11/24 Walgreens Store 106 W Nor $      37.36 Withdrawal  
+11/24/2025   Purchase authorized on 11/24 Barnes and Nobl 2615 Medi $     124.41 Withdrawal  
+11/24/2025   Sallie Mae Bank Slmloanpmt 251121 5642069959 Slm Loan $     453.39 Withdrawal  
+11/25/2025   Purchase authorized on 11/23 Starbucks Store 53    $      11.74 Withdrawal  
+11/25/2025   Purchase authorized on 11/24 Farmers Family Res    $      48.81 Withdrawal  
+11/26/2025   Purchase authorized on 11/24 Hardees 1501787 Murfreesboro $       9.43 Withdrawal  
+11/26/2025   Purchase authorized on 11/24 Circle K # 03903 Murfreesboro $       9.53 Withdrawal  
+11/26/2025   Purchase authorized on 11/26 Kroger #532 Murfreesboro TN $      17.32 Withdrawal  
+11/28/2025   Purchase authorized on 11/26 McDonald's F24675     $       8.44 Withdrawal  
+11/28/2025   Purchase authorized on 11/26 Google Tv 650-2530000 CA $       9.99 Withdrawal  
+11/28/2025   Purchase authorized on 11/27 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+11/28/2025   Purchase authorized on 11/27 Sq *Key4U Locksmit Gosq.Com $    1276.39 Withdrawal  
+12/1/2025    Purchase authorized on 11/27 Burger King #23308    $      15.68 Withdrawal  
+12/1/2025    Purchase authorized on 11/30 Kroger #532 Murfreesboro TN $      81.93 Withdrawal  
+12/3/2025    Purchase authorized on 12/03 Barnes and Nobl 2615 Medi $      11.50 Withdrawal  
+12/3/2025    Purchase authorized on 12/03 Barnes and Nobl 2615 Medi $     139.35 Withdrawal  
+12/4/2025    Purchase authorized on 12/04 Kroger #532 Murfreesboro TN $      33.88 Withdrawal  
+12/4/2025    Purchase authorized on 12/04 Kroger Fuel #953 2449 Old $      20.62 Withdrawal  
+12/5/2025    Purchase authorized on 12/04 DD *Doordash Walgr    $      39.33 Withdrawal  
+12/8/2025    Purchase authorized on 12/04 DD *Doordash Baski    $      25.03 Withdrawal  
+12/8/2025    Purchase authorized on 12/05 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+12/8/2025    Purchase authorized on 12/05 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/8/2025    Purchase authorized on 12/05 Shell Service Station $       2.98 Withdrawal  
+12/8/2025    Purchase authorized on 12/06 Petsmart # 0648 Murfreesboro $     116.31 Withdrawal  
+12/8/2025    Purchase authorized on 12/06 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+12/8/2025    Purchase authorized on 12/06 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+12/8/2025    Purchase authorized on 12/07 McDonald's F24675     $      14.70 Withdrawal  
+12/8/2025    Purchase authorized on 12/07 Shell Service Station $      13.01 Withdrawal  
+12/8/2025    Purchase authorized on 12/07 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/8/2025    Purchase authorized on 12/07 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/9/2025    Purchase authorized on 12/08 McDonald's F24675     $      11.40 Withdrawal  
+12/9/2025    Purchase authorized on 12/08 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+12/9/2025    Purchase authorized on 12/08 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/10/2025   Purchase authorized on 12/09 Shell Service Station $      17.35 Withdrawal  
+12/11/2025   Recurring Payment authorized on 12/10 Hlu*Huluplus $      36.12 Withdrawal  
+12/12/2025   Purchase authorized on 12/12 Racetrac 2559 Murfreesboro TN $      31.56 Withdrawal  
+12/15/2025   Purchase authorized on 12/11 Arbys 8081 Murfreesboro TN $      14.59 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 McDonald's F24675     $      13.49 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 Parchment-Univ Doc    $      15.00 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 Parchment-Univ Doc    $       3.95 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 Parchment-Univ Doc    $      15.00 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 Parchment-Univ Doc    $       3.95 Withdrawal  
+12/15/2025   Purchase authorized on 12/12 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+12/15/2025   Purchase authorized on 12/13 Nyx*Five Star Food Hunt Valley $       5.15 Withdrawal  
+12/15/2025   Purchase authorized on 12/13 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/15/2025   Zelle to Thomas McKinzie on 12/13 Ref # Wfct0Zlfdp83 My Half $     121.00 Withdrawal  
+12/15/2025   Purchase authorized on 12/13 Whataburger 1354      $      14.59 Withdrawal  
+12/15/2025   Purchase authorized on 12/14 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+12/15/2025   Purchase authorized on 12/14 Five Star Breaktim Nashville TN $       2.65 Withdrawal  

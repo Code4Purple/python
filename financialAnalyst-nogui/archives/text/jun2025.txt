@@ -1,0 +1,63 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+6/17/2025    Purchase authorized on 06/16 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/17/2025    Purchase authorized on 06/16 Southeast Financia    $     312.50 Withdrawal  
+6/18/2025    Purchase authorized on 06/17 Five Star Breaktim Nashville TN $       0.65 Withdrawal  
+6/18/2025    Purchase authorized on 06/17 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+6/18/2025    Purchase authorized on 06/18 Racetrac2559 Murfreesboro TN $      16.21 Withdrawal  
+6/20/2025    Purchase authorized on 06/17 Andy's - Murfreesb    $       6.90 Withdrawal  
+6/20/2025    Purchase authorized on 06/18 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/20/2025    Purchase authorized on 06/19 The Home Depot #0707  $      31.97 Withdrawal  
+6/20/2025    Purchase authorized on 06/19 Petsmart # 0648 Murfreesboro $     128.39 Withdrawal  
+6/20/2025    Purchase authorized on 06/19 Samsclub 6501 Gas     $      29.72 Withdrawal  
+6/20/2025    Purchase authorized on 06/19 Sams Club 125 John R R $      73.69 Withdrawal  
+6/23/2025    Purchase authorized on 06/21 Racetrac2559 Murfreesboro TN $       1.64 Withdrawal  
+6/23/2025    Purchase authorized on 06/21 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+6/23/2025    Purchase authorized on 06/21 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/23/2025    Recurring Payment authorized on 06/23 Ring Basic Plan $       4.99 Withdrawal  
+6/25/2025    Purchase authorized on 06/23 ME-Murfreesboro-Ki    $      39.38 Withdrawal  
+6/26/2025    Purchase authorized on 06/26 Kroger #5 2449 Old for $       8.69 Withdrawal  
+6/27/2025    Purchase authorized on 06/25 Steamgames.Com 425    $       5.00 Withdrawal  
+6/27/2025    Purchase authorized on 06/26 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/27/2025    Purchase authorized on 06/27 Twice Daily W Bison 6055 $      12.46 Withdrawal  
+6/30/2025    Purchase authorized on 06/27 Five Star Breaktim Nashville TN $       3.15 Withdrawal  
+6/30/2025    Purchase authorized on 06/27 Five Star Breaktim Nashville TN $       0.65 Withdrawal  
+6/30/2025    Purchase authorized on 06/28 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/30/2025    Purchase authorized on 06/29 Wingstop 2405 Murfreesboro $      24.68 Withdrawal  
+7/1/2025     Purchase authorized on 06/29 Steamgames.Com 425    $     117.85 Withdrawal  
+7/1/2025     Purchase authorized on 06/30 Jets Pizza - TN-00 Murfreesboro $      39.92 Withdrawal  
+7/2/2025     Purchase authorized on 07/01 Samsclub #6501 Murfreesboro $     115.38 Withdrawal  
+7/2/2025     Recurring Payment authorized on 07/01 Sams Club #6501 $      32.51 Withdrawal  
+7/3/2025     Purchase authorized on 06/30 Wl *Steam Purchase    $       5.00 Withdrawal  
+7/3/2025     Purchase authorized on 07/03 Kroger #5 2449 Old for $      10.66 Withdrawal  
+7/7/2025     Purchase authorized on 07/01 Wl *Steam Purchase    $       5.00 Withdrawal  
+7/7/2025     Purchase authorized on 07/02 State Farm Insura 800-956-6310 $     227.55 Withdrawal  
+7/7/2025     Purchase authorized on 07/02 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+7/7/2025     Purchase authorized on 07/04 Shell Service Station $      11.60 Withdrawal  
+7/7/2025     Purchase authorized on 07/04 Bps*Bilt Rewards C    $    1803.70 Withdrawal  
+7/7/2025     Purchase authorized on 07/05 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+7/7/2025     Purchase authorized on 07/06 Twice Daily W Bison 6055 $      14.82 Withdrawal  
+7/9/2025     Purchase authorized on 07/07 Wako Japanese Rest    $      82.33 Withdrawal  
+7/9/2025     Purchase authorized on 07/07 Andy's - Murfreesb    $       9.70 Withdrawal  
+7/9/2025     Purchase authorized on 07/07 Wl *Steam Purchase    $       5.00 Withdrawal  
+7/10/2025    Purchase authorized on 07/08 DD *Doordash Wendy    $      29.79 Withdrawal  
+7/10/2025    Purchase authorized on 07/10 Kroger #5 2449 Old for $      19.38 Withdrawal  
+7/11/2025    Purchase authorized on 07/09 Steamgames.Com 425    $      13.40 Withdrawal  
+7/11/2025    Recurring Payment authorized on 07/10 Hlu*Huluplus $      32.84 Withdrawal  
+7/11/2025    Purchase authorized on 07/10 Five Star Breaktim Nashville TN $       3.15 Withdrawal  
+7/11/2025    Purchase authorized on 07/10 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+7/11/2025    Purchase authorized on 07/10 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+7/14/2025    Purchase authorized on 07/11 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+7/14/2025    Purchase authorized on 07/11 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+7/14/2025    Purchase authorized on 07/11 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+7/14/2025    Purchase authorized on 07/12 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+7/14/2025    Purchase authorized on 07/12 Wendys 617 Nashville TN $      11.73 Withdrawal  
+7/14/2025    Purchase authorized on 07/12 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+7/14/2025    Purchase authorized on 07/12 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+7/14/2025    Purchase authorized on 07/13 Racetrac2559 Murfreesboro TN $      15.50 Withdrawal  
+7/14/2025    Purchase authorized on 07/13 Racetrac2559 Murfreesboro TN $      38.27 Withdrawal  
+7/14/2025    Purchase authorized on 07/13 Five Star Breaktim Nashville TN $       3.15 Withdrawal  
+7/15/2025    Purchase authorized on 07/12 Amazon.Com*Nr75B8A    $      71.96 Withdrawal  
+7/15/2025    Purchase authorized on 07/15 Target T- 1851 Old for $      98.41 Withdrawal  
+7/16/2025    Purchase authorized on 07/14 DD *Doordashdouble    $      91.91 Withdrawal  
+7/16/2025    Purchase authorized on 07/15 Southeast Financia    $     312.50 Withdrawal  

@@ -1,0 +1,61 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+5/16/2025    Purchase authorized on 05/15 Sunny Smiles Famil Hermitage $     934.00 Withdrawal  
+5/19/2025    Purchase authorized on 05/15 Ciao T1 C11 Ord Chicago IL $      11.60 Withdrawal  
+5/19/2025    Purchase Intl authorized on 05/16 Lashinbang Akihaba Tokyo $      15.77 Withdrawal  
+5/19/2025    Non-WF ATM Withdrawal authorized on 05/17 Ota-Ku Tokyo $      69.77 Withdrawal  
+5/20/2025    Purchase Intl authorized on 05/16 McDonald's Niigata Jpn $       7.18 Withdrawal  
+5/21/2025    Purchase Intl authorized on 05/18 Lawson Tokyo Jpn $       4.23 Withdrawal  
+5/23/2025    Purchase Intl authorized on 05/20 Seven-Eleven Tokyo Jpn $       2.52 Withdrawal  
+5/23/2025    Recurring Payment authorized on 05/23 Ring Basic Plan $       4.99 Withdrawal  
+5/27/2025    Purchase authorized on 05/23 Iad Jersey Mike's Dulles VA $      32.89 Withdrawal  
+5/27/2025    Purchase authorized on 05/24 Shell Service Station Bristol VA $       5.42 Withdrawal  
+5/27/2025    Purchase authorized on 05/24 Ctlp*Curd Vending Rickman TN $       3.35 Withdrawal  
+5/27/2025    Purchase authorized on 05/25 Racetrac2559 0002     $      27.93 Withdrawal  
+5/27/2025    Purchase authorized on 05/25 Racetrac2559 Murfreesboro TN $       5.25 Withdrawal  
+5/27/2025    Purchase authorized on 05/25 Nyx*Five Star Food Hunt Valley $       3.15 Withdrawal  
+5/27/2025    Purchase authorized on 05/25 DD *Doordash McDon    $      27.46 Withdrawal  
+5/27/2025    Purchase authorized on 05/26 WM Superc 2000 Old for $     113.52 Withdrawal  
+5/28/2025    Purchase authorized on 05/27 Exxon 7-Eleven 410 Nashville TN $       2.90 Withdrawal  
+5/30/2025    Purchase authorized on 05/30 Kroger #5 2449 Old for $      12.03 Withdrawal  
+6/2/2025     Purchase authorized on 05/30 Exxon 7-Eleven 410 Nashville TN $       4.46 Withdrawal  
+6/2/2025     Purchase authorized on 05/30 Burger King #6975 Nashville TN $       9.65 Withdrawal  
+6/2/2025     Purchase authorized on 05/31 McDonald's F1421 Nashville TN $       9.54 Withdrawal  
+6/2/2025     Purchase authorized on 06/01 Racetrac2559 Murfreesboro TN $       5.25 Withdrawal  
+6/2/2025     Purchase authorized on 06/02 Walgreens Store 2401 Old $      28.00 Withdrawal  
+6/3/2025     Purchase authorized on 06/01 Racetrac2559 0002     $      28.20 Withdrawal  
+6/3/2025     Purchase authorized on 06/01 Gateway Wines Spir    $       2.51 Withdrawal  
+6/4/2025     Purchase Return authorized on 06/02 Amazon Prime Pmts $      16.41 Withdrawal  
+6/4/2025     Purchase authorized on 06/02 State Farm Insura 800-956-6310 $      40.66 Withdrawal  
+6/4/2025     Purchase authorized on 06/02 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+6/4/2025     Purchase authorized on 06/02 State Farm Insura 800-956-6310 $     180.62 Withdrawal  
+6/4/2025     Purchase authorized on 06/02 State Farm Insura 800-956-6310 $      19.12 Withdrawal  
+6/4/2025     Purchase authorized on 06/03 Five Star Breaktim Nashville TN $       3.15 Withdrawal  
+6/4/2025     Purchase authorized on 06/03 Five Star Breaktim Nashville TN $       3.15 Withdrawal  
+6/5/2025     Purchase authorized on 06/03 DD *Doordashdouble    $      23.24 Withdrawal  
+6/5/2025     Purchase authorized on 06/04 McDonald's F1421 Nashville TN $       9.54 Withdrawal  
+6/5/2025     Purchase authorized on 06/04 Five Star Breaktim Nashville TN $       2.15 Withdrawal  
+6/5/2025     Purchase authorized on 06/04 Sonic Drive IN #66    $      19.18 Withdrawal  
+6/6/2025     Purchase authorized on 06/06 Wal-Mart #0682 Murfreesboro $      32.29 Withdrawal  
+6/9/2025     Purchase authorized on 06/07 Racetrac2559 0002     $      31.19 Withdrawal  
+6/9/2025     Purchase authorized on 06/07 Five Star Breaktim Nashville TN $       0.65 Withdrawal  
+6/9/2025     Purchase authorized on 06/08 7-Eleven 41055 Nashville TN $       7.28 Withdrawal  
+6/9/2025     Purchase authorized on 06/09 7-Eleven 41055 Nashville TN $       9.87 Withdrawal  
+6/9/2025     Purchase authorized on 06/09 Racetrac2559 Murfreesboro TN $      10.74 Withdrawal  
+6/11/2025    Purchase authorized on 06/09 AMC 4473 Stones RI    $      35.10 Withdrawal  
+6/11/2025    Recurring Payment authorized on 06/10 Hulu 877-8244858 $      31.23 Withdrawal  
+6/11/2025    Purchase authorized on 06/10 Exxon 7-Eleven 410 Nashville TN $       4.82 Withdrawal  
+6/11/2025    Purchase authorized on 06/11 Racetrac2559 Murfreesboro TN $      13.04 Withdrawal  
+6/12/2025    Purchase authorized on 06/10 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+6/13/2025    Purchase authorized on 06/11 Par*Smoothie King Nashville TN $      10.20 Withdrawal  
+6/13/2025    Sallie Mae Bank Slmloanpmt 250612 5642069959 Bennie $     464.14 Withdrawal  
+6/16/2025    Purchase authorized on 06/12 DD *Doordash McDon    $      27.12 Withdrawal  
+6/16/2025    Purchase authorized on 06/13 DD *Doordash McDon    $      27.12 Withdrawal  
+6/16/2025    Purchase authorized on 06/14 Racetrac2559 0002     $      27.25 Withdrawal  
+6/16/2025    Purchase authorized on 06/14 Racetrac2559 Murfreesboro TN $      10.93 Withdrawal  
+6/16/2025    Purchase authorized on 06/15 Racetrac2559 Murfreesboro TN $       7.99 Withdrawal  
+6/16/2025    Zelle to Thomas McKinzie on 06/15 Ref #Pp0Yxlhlcs Zues Vet $     147.00 Withdrawal  
+6/16/2025    Zelle to Thomas McKinzie on 06/15 Ref #Pp0Yxlhnrd Towards $     200.00 Withdrawal  
+6/16/2025    Purchase authorized on 06/15 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+6/16/2025    Purchase authorized on 06/16 Racetrac2559 Murfreesboro TN $      11.93 Withdrawal  
+6/16/2025    Purchase authorized on 06/16 Kroger #5 4432 Veteran $       7.99 Withdrawal  

@@ -1,0 +1,96 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+10/17/2025   Purchase authorized on 10/15 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+10/17/2025   Purchase authorized on 10/15 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+10/17/2025   Purchase authorized on 10/16 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+10/17/2025   Purchase authorized on 10/16 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+10/20/2025   Purchase authorized on 10/16 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+10/20/2025   Purchase authorized on 10/16 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+10/20/2025   Purchase authorized on 10/17 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+10/20/2025   Purchase authorized on 10/17 Walgreens Store 106 W Nor $      12.35 Withdrawal  
+10/20/2025   Purchase authorized on 10/18 Wal-Mart #0682 Murfreesboro $      63.13 Withdrawal  
+10/20/2025   Purchase authorized on 10/18 Racetrac2559 Murfreesboro TN $      17.70 Withdrawal  
+10/20/2025   Purchase authorized on 10/20 Cracker Barrel # 138 Chaf $       9.87 Withdrawal  
+10/20/2025   Purchase authorized on 10/20 Sams Club #6501 Murfreesboro $     530.66 Withdrawal  
+10/20/2025   Purchase authorized on 10/20 Petsmart # 0648 Murfreesboro $     103.14 Withdrawal  
+10/20/2025   Purchase authorized on 10/20 Target T-1126 Murfreesboro TN $      41.45 Withdrawal  
+10/20/2025   Purchase authorized on 10/20 Target T-1126 Murfreesboro TN $      32.91 Withdrawal  
+10/20/2025   Purchase Return authorized on 10/20 Sam's Club Murfreesboro $     523.35 Withdrawal  
+10/21/2025   Purchase authorized on 10/19 DD *Doordash Capta    $      93.07 Withdrawal  
+10/21/2025   Purchase authorized on 10/20 Samsclub #6501 Murfreesboro $      30.64 Withdrawal  
+10/21/2025   Purchase authorized on 10/21 Racetrac2559 Murfreesboro TN $      33.59 Withdrawal  
+10/22/2025   Purchase authorized on 10/21 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+10/22/2025   Purchase authorized on 10/21 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+10/23/2025   Purchase authorized on 10/22 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+10/23/2025   Recurring Payment authorized on 10/23 Ring Basic Plan $       4.99 Withdrawal  
+10/24/2025   Purchase authorized on 10/22 Burger King #23308    $      13.37 Withdrawal  
+10/24/2025   Purchase authorized on 10/22 Parchment-Univ Doc    $       3.95 Withdrawal  
+10/24/2025   Purchase authorized on 10/22 Parchment-Univ Doc    $      15.00 Withdrawal  
+10/27/2025   Purchase authorized on 10/23 Tst*Koji Express J Murfreesboro $      24.63 Withdrawal  
+10/27/2025   Purchase authorized on 10/24 Google*Tv G.CO/Helppay# CA $      14.99 Withdrawal  
+10/27/2025   Purchase authorized on 10/24 Pmc - Paid Parking    $      24.62 Withdrawal  
+10/27/2025   Purchase authorized on 10/24 Bar Taco 12 South Nashville TN $      67.54 Withdrawal  
+10/27/2025   Purchase authorized on 10/25 Shell Service Station $      11.74 Withdrawal  
+10/27/2025   Purchase authorized on 10/25 Advance Auto PA Las Vegas NV $      72.74 Withdrawal  
+10/27/2025   Purchase authorized on 10/25 Kroger #532 Murfreesboro TN $      27.94 Withdrawal  
+10/27/2025   Purchase authorized on 10/25 Kroger Fuel #953 2449 Old $      26.89 Withdrawal  
+10/27/2025   Purchase authorized on 10/25 Little Caesars 140 Murfreesboro $      14.62 Withdrawal  
+10/27/2025   Purchase authorized on 10/26 McDonald's F1421 Nashville TN $       7.56 Withdrawal  
+10/28/2025   Purchase authorized on 10/26 Wl *Steam Purchase    $      51.89 Withdrawal  
+10/28/2025   Purchase authorized on 10/27 McDonald's F1421 Nashville TN $       7.56 Withdrawal  
+10/29/2025   Purchase authorized on 10/28 DD *Doordashdouble    $      70.62 Withdrawal  
+10/31/2025   Purchase authorized on 10/29 DD *Doordash No.1C    $      68.80 Withdrawal  
+11/3/2025    Purchase authorized on 10/31 McDonald's F1421 Nashville TN $       7.56 Withdrawal  
+11/3/2025    Purchase authorized on 10/31 Sonic Drive IN #37 Nashville TN $      20.86 Withdrawal  
+11/3/2025    Purchase authorized on 10/31 Circle K # 03903 Murfreesboro $      12.99 Withdrawal  
+11/3/2025    Purchase authorized on 10/31 State Farm Insura 800-956-6310 $     223.72 Withdrawal  
+11/3/2025    Purchase authorized on 10/31 State Farm Insura 800-956-6310 $      24.37 Withdrawal  
+11/3/2025    Recurring Payment authorized on 10/31 Bilt Rent - Cushma $    1818.26 Withdrawal  
+11/3/2025    Purchase authorized on 11/01 McDonald's F1421 Nashville TN $       7.56 Withdrawal  
+11/3/2025    Purchase authorized on 11/01 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+11/3/2025    Purchase authorized on 11/01 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+11/3/2025    Purchase authorized on 11/01 DD *Doordash Sonic    $      33.41 Withdrawal  
+11/3/2025    Purchase authorized on 11/02 Shell Service Station $      33.16 Withdrawal  
+11/3/2025    Purchase authorized on 11/02 Shell Service Station $       5.87 Withdrawal  
+11/3/2025    Purchase authorized on 11/02 Five Star Breaktim Nashville TN $       3.65 Withdrawal  
+11/3/2025    Purchase authorized on 11/02 Sonic Drive IN #37 Nashville TN $      18.00 Withdrawal  
+11/3/2025    Zelle to Thomas McKinzie on 11/02 Ref # Wfct0Zg3Lph4 Save $     100.00 Withdrawal  
+11/4/2025    Purchase authorized on 11/03 McDonald's F24675     $       8.44 Withdrawal  
+11/4/2025    Purchase authorized on 11/03 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/4/2025    Purchase authorized on 11/03 Five Star Breaktim Nashville TN $       2.15 Withdrawal  
+11/4/2025    Purchase authorized on 11/03 Farmers Family Res    $      48.59 Withdrawal  
+11/5/2025    Purchase authorized on 11/05 Racetrac 2559 Murfreesboro TN $      29.84 Withdrawal  
+11/7/2025    Purchase authorized on 11/06 McDonald's F24675     $       8.44 Withdrawal  
+11/7/2025    Purchase authorized on 11/06 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+11/7/2025    Purchase authorized on 11/07 Shell Service Station $      11.65 Withdrawal  
+11/7/2025    Purchase authorized on 11/07 Kroger #565 Murfreesboro TN $      36.03 Withdrawal  
+11/10/2025   Purchase authorized on 11/08 McDonald's F24675     $       8.44 Withdrawal  
+11/10/2025   Purchase authorized on 11/08 Chick-Fil-A #04169 Nashville TN $      12.28 Withdrawal  
+11/10/2025   Purchase authorized on 11/08 Five Star Breaktim Nashville TN $       1.40 Withdrawal  
+11/10/2025   Purchase authorized on 11/09 Racetrac 2559 Murfreesboro TN $      30.01 Withdrawal  
+11/10/2025   Purchase authorized on 11/09 McDonald's F24675     $       8.22 Withdrawal  
+11/10/2025   Purchase authorized on 11/09 Sams Club #6501 Murfreesboro $      35.58 Withdrawal  
+11/10/2025   Purchase authorized on 11/10 Shell Service Station $      13.75 Withdrawal  
+11/12/2025   Purchase authorized on 11/09 DD *Doordash Baski    $      38.67 Withdrawal  
+11/12/2025   Recurring Payment authorized on 11/10 Hlu*Huluplus $      36.12 Withdrawal  
+11/12/2025   Purchase authorized on 11/10 McDonald's F24675     $       8.11 Withdrawal  
+11/13/2025   Purchase authorized on 11/11 DD *Doordash Dairy    $      21.27 Withdrawal  
+11/14/2025   Purchase authorized on 11/13 McDonald's F24675     $       7.67 Withdrawal  
+11/14/2025   Purchase authorized on 11/13 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/14/2025   Purchase authorized on 11/13 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+11/14/2025   Purchase authorized on 11/13 McDonald's F24675     $      14.70 Withdrawal  
+11/14/2025   Purchase authorized on 11/14 Shell Service Station $      10.70 Withdrawal  
+11/17/2025   Purchase authorized on 11/13 Nyx*Five Star Food Hunt Valley $       5.15 Withdrawal  
+11/17/2025   Purchase authorized on 11/14 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/17/2025   Purchase authorized on 11/14 Donatos #0427 Murfreesboro $      35.11 Withdrawal  
+11/17/2025   Purchase authorized on 11/15 Shell Service Station $       8.56 Withdrawal  
+11/17/2025   Purchase authorized on 11/16 Nyx*Five Star Food Hunt Valley $       4.15 Withdrawal  
+11/17/2025   Purchase authorized on 11/16 Five Star Breaktim Nashville TN $       2.40 Withdrawal  
+11/17/2025   Purchase authorized on 11/16 Shell Service Station $      18.22 Withdrawal  
+11/17/2025   Purchase authorized on 11/16 Shell Service Station $      37.59 Withdrawal  
+11/17/2025   Recurring Payment authorized on 11/16 Tryhackme.Com $     138.29 Withdrawal  
+11/17/2025   Purchase authorized on 11/17 Best Buy 00014258     $      10.96 Withdrawal  
+11/18/2025   Purchase authorized on 11/17 McDonald's F1421 Nashville TN $       7.56 Withdrawal  
+11/18/2025   Purchase authorized on 11/17 Five Star Breaktim Nashville TN $       2.65 Withdrawal  
+11/18/2025   Purchase authorized on 11/18 Kroger #532 Murfreesboro TN $       9.64 Withdrawal  
+11/18/2025   Purchase authorized on 11/18 Sams Club #6501 Murfreesboro $     187.77 Withdrawal  

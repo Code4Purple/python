@@ -1,0 +1,74 @@
+Date         Description                                              Amount Type        
+==========================================================================================
+2/19/2025    Purchase authorized on 02/17 DD *Doordash Dolla    $      27.24 Withdrawal  
+2/19/2025    Purchase authorized on 02/19 Circle K # 03916 1775 $       2.51 Withdrawal  
+2/20/2025    Purchase authorized on 02/19 365 Market 888 43 Troy MI $       5.83 Withdrawal  
+2/20/2025    Purchase authorized on 02/20 Bp#2129000Golde Whites $       5.26 Withdrawal  
+2/21/2025    Garrett Venture Direct Dep 250221 942733421052Vrn  $     632.27 Withdrawal  
+2/21/2025    Purchase authorized on 02/19 Burger King #23308    $      16.34 Withdrawal  
+2/21/2025    Purchase authorized on 02/19 Aci Learning 303-832-4665 CO $      59.00 Withdrawal  
+2/24/2025    Purchase authorized on 02/20 365 Market 888 43 Troy MI $       3.19 Withdrawal  
+2/24/2025    Purchase authorized on 02/21 365 Market 888 43 Troy MI $       3.45 Withdrawal  
+2/24/2025    Purchase authorized on 02/21 DD *Doordash Arbys    $      23.03 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 Kroger #5 2449 Old for $       6.38 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 Kroger Fu 2449 Old for $      28.00 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 365 Market 888 43 Troy MI $       3.83 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 Dollar General # Dg 14027 $       3.03 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 Dollar Tree Clarksville TN $       1.33 Withdrawal  
+2/24/2025    Purchase authorized on 02/22 365 Market 888 43 Troy MI $       2.66 Withdrawal  
+2/24/2025    Recurring Payment authorized on 02/23 Ring Basic Plan $       4.99 Withdrawal  
+2/24/2025    Purchase authorized on 02/24 Five Belo 2047 Old for $       5.49 Withdrawal  
+2/24/2025    Purchase authorized on 02/24 Target T- 1851 Old for $     101.49 Withdrawal  
+2/25/2025    Purchase authorized on 02/24 AMC 4466 Murfreesb    $      49.98 Withdrawal  
+2/27/2025    Purchase authorized on 02/25 Firehouse Subs 059    $      36.00 Withdrawal  
+2/27/2025    Purchase authorized on 02/26 McDonald's F40746 Clarksville $      10.83 Withdrawal  
+2/27/2025    Purchase authorized on 02/27 Kroger #5 2449 Old for $      31.62 Withdrawal  
+2/27/2025    Purchase authorized on 02/27 Circle K # 03916 Clarksville TN $       3.29 Withdrawal  
+2/28/2025    Garrett Venture Direct Dep 250228 751062651323Vrn  $     545.14 Withdrawal  
+2/28/2025    Purchase authorized on 02/26 365 Market 888 43 Troy MI $       2.13 Withdrawal  
+2/28/2025    Purchase authorized on 02/28 Racetrac 2546 Madison TN $       5.04 Withdrawal  
+2/28/2025    Purchase authorized on 02/28 Circle K # 03916 Clarksville TN $       4.26 Withdrawal  
+3/3/2025     Purchase authorized on 02/27 365 Market 888 43 Troy MI $       2.13 Withdrawal  
+3/3/2025     Purchase authorized on 03/01 Racetrac2559 0002     $      31.66 Withdrawal  
+3/3/2025     Purchase authorized on 03/01 Racetrac2559 Murfreesboro TN $       9.75 Withdrawal  
+3/3/2025     Purchase authorized on 03/01 HI Road 28 Clarksville TN $       2.40 Withdrawal  
+3/3/2025     Purchase authorized on 03/03 Racetrac2559 Murfreesboro TN $       1.64 Withdrawal  
+3/3/2025     Purchase authorized on 03/03 Target T- 1851 Old for $      32.90 Withdrawal  
+3/4/2025     Purchase authorized on 03/02 DD *Doordash Dolla    $      22.77 Withdrawal  
+3/4/2025     Purchase authorized on 03/02 Bps*Bilt Rewards C    $    1706.95 Withdrawal  
+3/4/2025     Purchase authorized on 03/03 4405 Great Clips A    $      13.99 Withdrawal  
+3/6/2025     Purchase authorized on 03/05 365 Market 888 43 Troy MI $       2.46 Withdrawal  
+3/6/2025     Purchase authorized on 03/05 Publix #1392 Clarksville TN $      10.95 Withdrawal  
+3/6/2025     Purchase authorized on 03/06 Racetrac 2546 Madison TN $       6.89 Withdrawal  
+3/7/2025     Garrett Venture Direct Dep 250307 741061903960Vrn  $     694.69 Withdrawal  
+3/7/2025     Purchase authorized on 03/06 Publix #1392 Clarksville TN $       7.97 Withdrawal  
+3/7/2025     Purchase authorized on 03/07 Shell Service Station Whites $       4.85 Withdrawal  
+3/7/2025     Purchase authorized on 03/07 Circle K # 03916 Clarksville TN $       3.48 Withdrawal  
+3/10/2025    Purchase authorized on 03/07 Racetrac2559 0002     $      28.22 Withdrawal  
+3/10/2025    Purchase authorized on 03/07 365 Market 888 43 Troy MI $       1.59 Withdrawal  
+3/10/2025    Purchase authorized on 03/08 Steak-N-Shake#0380    $      17.98 Withdrawal  
+3/10/2025    Sallie Mae Bank Slmloanpmt 250307 5642069959 Slm Loan $     200.00 Withdrawal  
+3/11/2025    Purchase authorized on 03/09 DD *Doordash 7-Ele    $      30.38 Withdrawal  
+3/11/2025    Recurring Payment authorized on 03/10 Hlu*Huluplus $      39.40 Withdrawal  
+3/11/2025    Purchase authorized on 03/10 McDonald's F24675     $      10.31 Withdrawal  
+3/11/2025    Purchase authorized on 03/10 Southeast Financia    $     253.37 Withdrawal  
+3/12/2025    Purchase authorized on 03/10 Par*Smoothie King Nashville TN $      10.70 Withdrawal  
+3/12/2025    Purchase authorized on 03/11 McDonald's F24675     $      10.31 Withdrawal  
+3/12/2025    Purchase authorized on 03/12 Racetrac2559 Murfreesboro TN $      14.62 Withdrawal  
+3/13/2025    Purchase authorized on 03/11 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  
+3/13/2025    Recurring Payment authorized on 03/12 Github, Inc. $      10.98 Withdrawal  
+3/13/2025    Purchase authorized on 03/12 Amazon Prime*8T09F    $      16.41 Withdrawal  
+3/14/2025    Garrett Venture Direct Dep 250314 781076542203Vrn  $     492.37 Withdrawal  
+3/14/2025    Garrett Venture Direct Dep 250314 781076542204Vrn  $     604.40 Withdrawal  
+3/14/2025    Purchase authorized on 03/12 Racetrac2559 0002     $      29.89 Withdrawal  
+3/14/2025    Purchase authorized on 03/12 Nyx*Five Star Food Hunt Valley $       2.15 Withdrawal  
+3/14/2025    Purchase authorized on 03/12 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  
+3/14/2025    Purchase authorized on 03/12 Burger King #23308    $      16.34 Withdrawal  
+3/17/2025    Purchase authorized on 03/13 Nyx*Five Star Food Hunt Valley $       2.40 Withdrawal  
+3/17/2025    Purchase authorized on 03/13 Nyx*Five Star Food Hunt Valley $       2.65 Withdrawal  
+3/17/2025    Purchase authorized on 03/14 Burger King #23308    $      17.77 Withdrawal  
+3/17/2025    Purchase authorized on 03/16 Metropolis Parking    $       8.99 Withdrawal  
+3/17/2025    Purchase authorized on 03/17 Shell Service Station Nashville $      37.90 Withdrawal  
+3/17/2025    Purchase authorized on 03/17 Shell Service Station Nashville $       1.59 Withdrawal  
+3/17/2025    Purchase authorized on 03/17 Kroger #5 2449 Old for $      44.70 Withdrawal  
+3/17/2025    Planet Fit Club Fees 2507306076231 Bennie Kowalski 23.06 968.10 $    3865.87 Withdrawal  
