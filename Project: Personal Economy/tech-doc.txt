@@ -1,0 +1,16 @@
+
+
+V1: 	
+	We should use python env to keep the app useable on any computers with the requiremnts doc with the project
+	
+	Project Broken Up with
+
+		Transactions -- Bank Account tracker
+		Expenses vs Income 
+		Debt 
+		paycheck checker 
+		
+
+	We should only do non gui app. Leave it it in the CLS Terinaml for V1.
+
+	

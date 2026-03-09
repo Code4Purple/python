@@ -1,0 +1,81 @@
+
+V1: 
+	This project idea is for making and tracking personal finances with record for investments and savings.
+	
+	This verison of the project will only be in the CLS Terinmal for the time being making sure the process works
+	before moving onto GUI.
+
+	Make a list of: assets , expenses, income, loan status and info.
+	Checking account vs Savings account 
+	
+	We want to track paycheck:  amounts with taxes taken out of the check and health and dental insurance amount 
+	I need to make sure that the payments is correct that is coming into the paycheck
+	if i able to, I need to track things like days off earned , sick time earned to track if orcal at work is correct
+	Work bank now (3/8/2026) : Annually 53,971.00 Rank: CG.ET02 // Vacation: started at 1/1/2026 45.95 with 6.67 hours every month
+	Sick time started at 24 at 1/1/2026 with a rate of 8 per month // Floating Holiday start at 8 on 1/1/2025 rate of 8 per month // 
+	personal time 24 hours at 1/2/2026 with no rate // 
+	
+				Totals: Personal : 24 hours, Floating Holiday: 32 Hours, Sick Time: 48 hours, Vaction: 65.95  
+				Note: last date of the update is 3/31/2026 
+
+	Taxes
+		Check for 1/9/26
+			Gross Income: 		2,075.81
+			Pretax Deductions: 	110.49
+			Employee Tax:		302.34
+			Net Pay:		1,662.98
+			Payroll Period:		12/20/25 - 1/2/26
+		
+		Check For 1/23/2026
+			Gross Earnings: 	2,353.16
+			Pretax:			110.49
+			Employee Tax:		356.84
+			Net Payment:		1885.83
+			Payroll Period		1/3/2026 - 1/16/2026
+		
+		Check for 2/6/2026
+			Gross Earnings:		2,268.03
+			Pretax:			110.49
+			Employee Tax:		340.10
+			Net Payment:		1,817.44
+			Payroll Period:		1/17/2026 - 1/30/2026
+		
+		Check For 2/20/2026
+			Gross Earnings:		2,131.81
+			Pretax:			110.49
+			Employee tax:		313.34
+			Net Payment:		1,707.98
+			Payroll Period		1/31/2026 - 2/13/2026
+			
+		Check for 3/6/2026	
+			Gross:			2,270.83
+			Pretax:			110.49
+			Employee Tax:		340.66
+			Net Payment:		1,819.68
+			Payroll Period		2/14/2026 - 2/27/2026
+		
+		
+		Night Shift Earnings Rate: Hours at night (3.50) * Rate (0.80) * How many (1.00) = 2.80
+		Evening Shift Rate: hours  Worked in the evening (80) * Rate(0.70) * How Many (1.00) = 56.00
+		Pretax Breakdown: Medical 108.46 + Vison 2.03
+		Overtime Rate: hours worked overtime * rate 25.95 * rate 1.50 * how many 1.50 = 136.22
+		
+		
+		I need to get the paycheck Monthly Activity and Keep a log of all out going and incoming income vs expenses for the bank account tracker
+
+		
+		Bank Account Tracker should have : 
+				1 Where the transaction come from
+				2 What Compnay or person
+				3 If it is a Bill Or Noraml expense
+				4 Amount 
+				5 How Often deos it happen : Monthly, Yearly , One time 		
+				6 How it left the account Withdraw ,  Payment , Income
+		
+		We should get what loans are active // payment rate to the loans // how much each loan total vs how much is left // 
+		| Loan Provider | Type Of Loan | Started Amount | How long total loan is | what is left on the loan | interest rate | currnt payments twds the loan | 
+		
+		Any Investments? 
+		
+		WHat are we saving for ...(Goals) 
+		
