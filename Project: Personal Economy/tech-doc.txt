@@ -8,7 +8,7 @@ V1:
 		Transactions -- Bank Account tracker
 		Expenses vs Income 
 		Debt 
-		paycheck checker 
+		paycheck checker  --- NAMED: paystub auditor
 		
 
 	We should only do non gui app. Leave it it in the CLS Terinaml for V1.
