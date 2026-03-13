@@ -1,10 +1,3 @@
-
-# Is there any way to get the same output without knowing the how much you make in year 
-# By only ussing the regular pay by regular hours line in the Pay Stub
-
-# Got the Annual Salary and Hourly Salary working for regular pay line to calcuate the 
-#   proper math for the print out
-
 import math
 
 def global_variables(option):
@@ -72,7 +65,8 @@ def overtime_earnings(quantity,rate):
      overtime = calculate_pay(time, rate, multiple)
      return cut_off(overtime)
 
-def regular_earnings(quantity, rate, multiple):
+def regular_earnings(quantity, rate):
+     multiple = 1
      return calculate_pay(quantity, rate, multiple)
 
 def Gross_Earnings(regular_pay, night_shift_pay, overtime_pay,evening_pay):
@@ -88,33 +82,39 @@ def Employee_Tax_Deductions_Percentage(Gross_Earnings, Pretax_Deductions, Employ
 def Net_Pay(Gross_Earnings, Pretax_Deductions, tax):
     return Gross_Earnings - Pretax_Deductions - tax
 
-
 def main():
 
-    user_input = float(input("Enter Total Amount in the Regular Pay Line: "))
-    M=1 
-    hours_worked = 80
-    AP = annualPay(user_input)
-    HR = hourly_per_annual(AP)
-    Reg_Amount= regular_earnings(hours_worked,HR,M)
-    print(f"Annual Pay: {AP}")
-    print(f"Regular Pay: {hours_worked} * {HR} * {1} = {Reg_Amount}")
+    # test 1
+    Reg_Pay_Amount = 2075.81
+    Hourly_Wage = 25.947625
+    Normal_TIme= 80
+    OT_Time = 3.30
+    OT_Pay_Amount = 136.22
+    Night_Pay_Amount = 2.80
+    Evening_Pay_Amount = 56.0
+    Annual_Pay_Amount = global_variables("annual_salary")
 
-    user_input = str(input("Did you work Overtime? (y/n): "))
-    if (user_input[0] == 'y'):
-        user_input1 = float(input("How Many (Hours.Mins): "))
-        # need to get a coverstaion of 3.30 hours into 3.50 for the math to work 
-        #FTM = finance_time_math(user_input1)
-        OT = overtime_earnings(user_input1, HR) 
-        NSD = night_shift_earnings(user_input1)
-        print(f"Overtime Earnings: {user_input1} * {HR} * {1.5} = {OT}")
-        print(f"Night Earnings: {user_input1} * {0.80} * {1} = {NSD}")
-    else:
-        print("No Overtime Recorded!")
-    
-    ES= evening_shift_earnings(hours_worked)
-    print(f"Evening Shift Earnings : {hours_worked} * {0.70} * {1} = {ES}")
-    
+    TestPassed = 0
+    TestTotal = 6
 
+    if(Annual_Pay_Amount == annualPay(Reg_Pay_Amount)):
+        TestPassed = TestPassed + 1
+
+    if(Hourly_Wage == hourly_per_annual(annualPay(Reg_Pay_Amount))):
+        TestPassed = TestPassed + 1
+
+    if(Reg_Pay_Amount == regular_earnings(Normal_TIme, hourly_per_annual(annualPay(Reg_Pay_Amount)))):
+        TestPassed = TestPassed + 1
+    
+    if(OT_Pay_Amount == overtime_earnings(OT_Time,hourly_per_annual(annualPay(Reg_Pay_Amount)))):
+        TestPassed = TestPassed + 1
+    
+    if(Night_Pay_Amount == night_shift_earnings(OT_Time)):
+        TestPassed = TestPassed + 1
+
+    if(Evening_Pay_Amount == evening_shift_earnings(80)):
+        TestPassed = TestPassed + 1
+
+    print(f"Test Passed {round_up(TestPassed/TestTotal) * 100}%")
 
 if __name__ == "__main__":    main()  
